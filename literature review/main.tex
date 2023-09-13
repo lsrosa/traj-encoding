@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+
+\input{tex/definitions}
+\input{tex/includes}
+\input{tex/acronyms}
+%%%%%%%% DOCUMENT %%%%%%%%
+\makeglossaries
+\begin{document}
+
+\input{tex/titlePage}
+
+\input{sections/papersSummary}
+\input{sections/comparison}
+\input{sections/openChallenges}
+
+\clearpage
+\printglossary[type=\acronymtype]
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{referencePapers/biblio}
+
+\end{document}
