@@ -1,0 +1,113 @@
+\section{Trajectory Learning}\label{sec: traj learning}
+
+\subsection*{2017 - Identifying Human Mobility via Trajectory Embeddings}
+\cite{gao2017identifying} classifies users based on trajectory data. The problem is hard because there are many more trajectories than users.
+
+\gls{rnn} is used, and said to be good for classification when the number of labels is small. In particular uses a \gls{lstm} for processing sub-trajectories.
+
+There is a location embedding, not sure how that is computed. But the trajectories are points on google maps, so there maybe be semantic information in there.
+%
+The sequence of location embedding is passed onto the \gls{lstm}, not sure how they handle different trajectory lengths.
+
+
+\subsection*{2018 - Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings}
+
+\textbf{Code on:} \url{https://github.com/wyndwarrior/Sectar}
+
+\cite{co2018self} learns an embedding for trajectories with one encoder and two decoders: a state decoder to decode from the latent space back into trajectories, and a policy decoder, which generates the trajectory in the environment. As such the state decoder predict the trajectory of the policy. The encoder is used in a hierarchical \gls{rl} setup.
+
+The state encoder and decoder are \glspl{rnn} and the policy decoder is a feed-forward \gls{nn}.
+
+\textbf{note:} if the encoder is trained with trajectories from different tasks, the policy will be conditioned to each task, what is sort of parameterzing the policy to tasks. 
+
+In the paper, the policy has unknown dynamics, and hence the \gls{rl} setup. Trajectories are continuos poses of joints over time. Tested in simulation. 
+
+\subsection*{2018 - Anomalous Trajectory Detection Using Recurrent Neural Network}
+
+\textbf{Code on:} \url{https://github.com/LeeSongt/ATD-RNN}
+
+\cite{song2018anomalous} proposes anomalous trajectory detection using \gls{rnn}.
+
+The trajectories are discretized, using a grid, and feed to a stacked \gls{rnn} for learning the embedding, then a multi-layered perceptron and a soft-max layer detects if the trajectory is anomalous.
+%
+The stacked \gls{rnn} is made by feeding the hidden states od the previous to the next \gls{rnn}.
+
+The trajectories are padded in order to get trajectories of the same length.
+
+\gls{lstm} and \gls{gru} are two special types of \glspl{rnn} are tested. \glspl{gru} seems to work better.
+
+\subsection*{2018 - Deep Representation Learning for Trajectory Similarity Computation}
+
+\textbf{Code on:} \url{https://github.com/boathit/t2vec}
+
+\cite{li2018deep} \gls{dl} approach for trajectory similarity. States that using \gls{rnn} is not a very good idea because you cannot reconstruct the trajectory and it fails to consider spatial proximity, which in inherited in trajectory data.
+
+called in the paper as \texttt{t2vec} or \texttt{seq2seq}?
+
+The approach is based on the encoder-decoder framework.
+%
+Handling varying sampling rates is done by augmenting the training data creating sub-trajectories by sub-sampling and noise addition. They also propose a spatial-aware loss, and pre-train the ??cells?? and let them to be optimized during training.
+
+\textbf{Notes:} The paper is very confusing. I do not really know that are the inputs and outputs or how the sequences are fed in the \gls{rnn} inside the encoder.
+
+\subsection*{2019 - Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach}
+\cite{yao2019computing}
+
+\subsection*{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
+
+\cite{fu2020trembr}
+
+\subsection*{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
+
+\cite{zhang2020trajectory}
+
+\subsection*{2020 - Semantic trajectory representation and retrieval via hierarchical embedding}
+\cite{gao2020semantic}
+
+\subsection*{2020 - MARC: a robust method for multiple-aspect trajectory classification via space, time, and semantic embeddings}
+\cite{may2020marc}
+
+\subsection*{2021 - Multiple Object Tracking by Trajectory Map Regression with Temporal Priors Embedding}
+\cite{wan2021multiple}
+
+\subsection*{2021 - Embedding-Based Similarity Computation for Massive Vehicle Trajectory Data}
+\cite{chen2021embedding}
+
+\subsection*{2021 - STENet: A hybrid spatio-temporal embedding network for human trajectory forecasting}
+\cite{zhang2021stenet}
+
+\subsection*{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
+\cite{han2021graph}
+
+\subsection*{2021 - T3S: Effective Representation Learning for Trajectory Similarity Computation}
+\cite{yang2021t3s}
+
+\subsection*{2021 - How meaningful are similarities in deep trajectory representations?}
+\cite{taghizadeh2021meaningful}
+
+\subsection*{2022 - Deep Fuzzy Contrast-Set Deviation Point Representation and Trajectory Detection}
+\cite{ahmed2022deep}
+
+\subsection*{2022 - Contrastive Pre-training of Spatial-Temporal Trajectory Embeddings}
+\cite{lin2022contrastive}
+
+\subsection*{2022 - TMN: Trajectory Matching Networks for Predicting Similarity}
+\cite{yang2022tmn}
+
+\subsection*{2022 - TSNE: Trajectory Similarity Network Embedding}
+\cite{ding2022tsne}
+
+\subsection*{2022 - Towards robust trajectory similarity computation: Representation-based spatio-temporal similarity quantification}
+\cite{chen2022towards}
+
+\subsection*{2023 - GRLSTM: Trajectory Similarity Computation with Graph-Based Residual LSTM}
+\cite{zhou2023grlstm}
+
+\subsection*{2023 - Spatial-temporal fusion graph framework for trajectory similarity computation}
+\cite{zhou2023spatial}
+
+\subsection*{2023 - Contrastive Trajectory Similarity Learning with Dual-Feature Attention}
+\cite{chang2023contrastive}
+
+\subsection*{2023 - Spatio-Temporal Trajectory Similarity Measures: A Comprehensive Survey and Quantitative Study}
+\cite{hu2023spatio}
