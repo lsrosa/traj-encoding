@@ -40,7 +40,7 @@ The trajectories are padded in order to get trajectories of the same length.
 
 \textbf{Code on:} \url{https://github.com/boathit/t2vec}
 
-\cite{li2018deep} \gls{dl} approach for trajectory similarity. States that using \gls{rnn} is not a very good idea because you cannot reconstruct the trajectory and it fails to consider spatial proximity, which in inherited in trajectory data.
+\cite{li2018deep} presents \texttt{t2vec}. A \gls{dl} approach for trajectory similarity. States that using \gls{rnn} is not a very good idea because you cannot reconstruct the trajectory and it fails to consider spatial proximity, which is inherited in trajectory data.
 
 called in the paper as \texttt{t2vec} or \texttt{seq2seq}?
 
@@ -51,11 +51,26 @@ Handling varying sampling rates is done by augmenting the training data creating
 \textbf{Notes:} The paper is very confusing. I do not really know that are the inputs and outputs or how the sequences are fed in the \gls{rnn} inside the encoder.
 
 \subsection*{2019 - Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach}
-\cite{yao2019computing}
+
+\cite{yao2019computing} proposes a method for accelerating trajectory similarity computation by sampling seeds of trajectories, computing their similarity, and approximating them with a neural metric.
+
+States that \glspl{rnn}, \glspl{lstm}, and \glspl{gru} can only  model one sequence without considering the between-sequence correlation.
+
+Does not consider time in the trajectory. Starts sampling from the trajectories and computes a distance matrix between the samples using a given trajectory distance metric which is then normalized.
+
+The \gls{rnn} is augmented with a memory, which is created by dividing the space into a grid, and for each grid slot, the memory stores the hidden vector of the \gls{rnn}. This memory is used to extend the \gls{rnn} cell, sort of like an \gls{lstm}.
+
+The loss for training is $\mathcal{L}{\tau_i, \tau_j}=\sum_k w_k(f(\tau_i, \tau_j)-\exp(-||e_i-e_j||)$, a weighted difference between the similarity metric $f$ and the distance in the embedding space ($e_i-e_j$). The weight $w_k$ is obtained using the normalized distance matrix, computing pairs of similar and dissimilar trajectories and more fancy stuff.
+
+\textbf{Notes:} map is like google map.
 
 \subsection*{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
 
-\cite{fu2020trembr}
+\cite{fu2020trembr} presents \texttt{traj2vec}. The paper focus on trajectories on roads. It preprocesses the trajectories by projecting them in a road network and the trajectory is a sequence of road segments and travel time.
+
+The \gls{rnn} decoder is conditioned to the road network, and the training is made by optimising a loss for the trajectory and another for time.
+
+\textbf{Notes:} Maybe the secret for velocities profiles is in the addition of time to the loss.
 
 \subsection*{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
 
