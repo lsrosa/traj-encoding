@@ -101,10 +101,15 @@ They give related works on social trajectory learning.
 \textbf{Notes:} They point to \glspl{vae} for modelling multi-modality and for the generative capabilities. 
 
 \subsection*{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
-\cite{han2021graph}
+\cite{han2021graph} Propose a \gls{gnn}-based trajectory embedding. The framework measures trajectory similarities, learns \glspl{poi}, and leans a trajectory embedding.
+
+A trajectory is encoded as the points in a graph map. Then they define a trajectory similarity metric on the \gls{poi} graph, based on the graph distance between the points and trajectories. An embedding capturing the neighbours and graph trajectory is learned. The \gls{poi} embeddings and their neighbours are used to learn another embedding using its neighbours information. Finally, \glspl{lstm} are used to learn the trajectory over the graph embeddings. The loss function minimizes the above defined distance between trajectories and the distance between the two closest trajectories.
 
 \subsection*{2021 - T3S: Effective Representation Learning for Trajectory Similarity Computation}
-\cite{yang2021t3s}
+
+\textbf{Name: T3S}
+
+\cite{yang2021t3s} combines \glspl{lstm} and attention \glspl{nn} over the grid graph for learning the embedding. Close to \cite{yao2019computing, zhang2020trajectory, chen2021embedding}.
 
 \subsection*{2021 - How meaningful are similarities in deep trajectory representations?}
 \cite{taghizadeh2021meaningful}
