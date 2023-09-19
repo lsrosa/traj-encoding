@@ -50,7 +50,20 @@ Handling varying sampling rates is done by augmenting the training data creating
 
 \textbf{Notes:} The paper is very confusing. I do not really know that are the inputs and outputs or how the sequences are fed in the \gls{rnn} inside the encoder.
 
+
+\subsection*{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
+
+\cite{fu2020trembr} presents \texttt{traj2vec}. The paper focus on trajectories on roads. It preprocesses the trajectories by projecting them in a road network and the trajectory is a sequence of road segments and travel time.
+
+The \gls{rnn} decoder is conditioned to the road network, and the training is made by optimising a loss for the trajectory and another for time.
+
+\textbf{Notes:} Maybe the secret for velocities profiles is in the addition of time to the loss.
+
 \subsection*{2019 - Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach}
+
+\textbf{Name: NeuTraj}
+
+\textbf{Code on:} \url{https://github.com/yaodi833/NeuTraj}
 
 \cite{yao2019computing} proposes a method for accelerating trajectory similarity computation by sampling seeds of trajectories, computing their similarity, and approximating them with a neural metric.
 
@@ -64,32 +77,28 @@ The loss for training is $\mathcal{L}{\tau_i, \tau_j}=\sum_k w_k(f(\tau_i, \tau_
 
 \textbf{Notes:} map is like google map.
 
-\subsection*{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
-
-\cite{fu2020trembr} presents \texttt{traj2vec}. The paper focus on trajectories on roads. It preprocesses the trajectories by projecting them in a road network and the trajectory is a sequence of road segments and travel time.
-
-The \gls{rnn} decoder is conditioned to the road network, and the training is made by optimising a loss for the trajectory and another for time.
-
-\textbf{Notes:} Maybe the secret for velocities profiles is in the addition of time to the loss.
-
 \subsection*{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
 
-\cite{zhang2020trajectory}
+\textbf{Name:Traj2SimVec}
+\cite{zhang2020trajectory} follows the same idea as in \cite{yao2019computing} which selects some trajectories for pre-training \rev{something}, the training samples are divided in three sub-trajectories \rev{because it seems to help learning}.
 
-\subsection*{2020 - Semantic trajectory representation and retrieval via hierarchical embedding}
-\cite{gao2020semantic}
+A distance matrix is computed which is used as supervision signal, similar to \cite{yao2019computing}.
 
 \subsection*{2020 - MARC: a robust method for multiple-aspect trajectory classification via space, time, and semantic embeddings}
-\cite{may2020marc}
 
-\subsection*{2021 - Multiple Object Tracking by Trajectory Map Regression with Temporal Priors Embedding}
-\cite{wan2021multiple}
+\cite{may2020marc} Embeds semantics on the trajectories. Each semantic information (weather, time, type of place) has an encoding, and a weight matrix which transform them into a fixed size vector. The semantic trajectory is fed to an \gls{lstm}, which encodes the trajectories, having the hidden states used for classification.
 
 \subsection*{2021 - Embedding-Based Similarity Computation for Massive Vehicle Trajectory Data}
-\cite{chen2021embedding}
+
+\cite{chen2021embedding} seems to propose the exact same thing as \cite{yao2019computing}, but with interpolation for de-noising.
 
 \subsection*{2021 - STENet: A hybrid spatio-temporal embedding network for human trajectory forecasting}
-\cite{zhang2021stenet}
+
+\cite{zhang2021stenet} Focuses on predicting pedestrian trajectories. Uses a \gls{lstm} with \glspl{cnn} to embed position features in multiple temporal time-scales. The encoder-decoder structure stack a \gls{cnn} and a graph attention model. The decodes stacks many \glspl{lstm}. 
+
+They give related works on social trajectory learning.
+
+\textbf{Notes:} They point to \glspl{vae} for modelling multi-modality and for the generative capabilities. 
 
 \subsection*{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
 \cite{han2021graph}
@@ -99,6 +108,11 @@ The \gls{rnn} decoder is conditioned to the road network, and the training is ma
 
 \subsection*{2021 - How meaningful are similarities in deep trajectory representations?}
 \cite{taghizadeh2021meaningful}
+
+\subsection*{2022 - Spatio-Temporal Trajectory Similarity Learning in Road Networks}
+\textbf{Name: ST2vec}
+
+\cite{fang2022spatio}
 
 \subsection*{2022 - Deep Fuzzy Contrast-Set Deviation Point Representation and Trajectory Detection}
 \cite{ahmed2022deep}
@@ -126,3 +140,7 @@ The \gls{rnn} decoder is conditioned to the road network, and the training is ma
 
 \subsection*{2023 - Spatio-Temporal Trajectory Similarity Measures: A Comprehensive Survey and Quantitative Study}
 \cite{hu2023spatio}
+
+\textbf{Code on:} \url{https://github.com/ZJU-DAILY/TSM}
+
+Present a survey with several methods, and benchmark for evaluating them. Apparently \texttt{Traj2SimVec} \cite{zhang2020trajectory} is the learning method, which is not grid-based that handles our problem.
