@@ -1,6 +1,13 @@
 \section{Trajectory Learning}\label{sec: traj learning}
 
+\subsection*{2014 - Sequence to Sequence Learning with Neural Networks}
+
+\textbf{Name: seq2seq}
+
+\cite{sutskever2014sequence}
+
 \subsection*{2017 - Identifying Human Mobility via Trajectory Embeddings}
+
 \cite{gao2017identifying} classifies users based on trajectory data. The problem is hard because there are many more trajectories than users.
 
 \gls{rnn} is used, and said to be good for classification when the number of labels is small. In particular uses a \gls{lstm} for processing sub-trajectories.
@@ -38,6 +45,7 @@ The trajectories are padded in order to get trajectories of the same length.
 
 \subsection*{2018 - Deep Representation Learning for Trajectory Similarity Computation}
 
+\textbf{Name: t2vec}
 \textbf{Code on:} \url{https://github.com/boathit/t2vec}
 
 \cite{li2018deep} presents \texttt{t2vec}. A \gls{dl} approach for trajectory similarity. States that using \gls{rnn} is not a very good idea because you cannot reconstruct the trajectory and it fails to consider spatial proximity, which is inherited in trajectory data.
@@ -101,6 +109,7 @@ They give related works on social trajectory learning.
 \textbf{Notes:} They point to \glspl{vae} for modelling multi-modality and for the generative capabilities. 
 
 \subsection*{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
+
 \cite{han2021graph} Propose a \gls{gnn}-based trajectory embedding. The framework measures trajectory similarities, learns \glspl{poi}, and leans a trajectory embedding.
 
 A trajectory is encoded as the points in a graph map. Then they define a trajectory similarity metric on the \gls{poi} graph, based on the graph distance between the points and trajectories. An embedding capturing the neighbours and graph trajectory is learned. The \gls{poi} embeddings and their neighbours are used to learn another embedding using its neighbours information. Finally, \glspl{lstm} are used to learn the trajectory over the graph embeddings. The loss function minimizes the above defined distance between trajectories and the distance between the two closest trajectories.
@@ -112,24 +121,60 @@ A trajectory is encoded as the points in a graph map. Then they define a traject
 \cite{yang2021t3s} combines \glspl{lstm} and attention \glspl{nn} over the grid graph for learning the embedding. Close to \cite{yao2019computing, zhang2020trajectory, chen2021embedding}.
 
 \subsection*{2021 - How meaningful are similarities in deep trajectory representations?}
-\cite{taghizadeh2021meaningful}
+
+\textbf{Code on:} \url{https://dbis.ipd.kit.edu/2652.php}
+
+\cite{taghizadeh2021meaningful} presents a survey and evaluation of \texttt{t2vec} \cite{li2018deep} and other methods. Seems like \texttt{t2vec} with some variations outperform the rest. \texttt{t2vec} seems to be stacked \glspl{lstm}.
+
+Evaluate how changing \texttt{t2vec} parameters affect similarity values. \texttt{t2vec} seems robust to parameters.
+
+Evaluate \texttt{t2vec} against non learning metrics. Seems like associating them lead to better results.
+
+\rev{They DO ignore the whole literature on learning methods?}
+
+Concludes that using \gls{lcss} and \texttt{t2vec} leads to a better trajectory similarity, covering overlap, shape, direction and distance.
+
+\textbf{Notes:} Maybe that should be $4$ characteristics to consider.   
+
 
 \subsection*{2022 - Spatio-Temporal Trajectory Similarity Learning in Road Networks}
+
 \textbf{Name: ST2vec}
 
-\cite{fang2022spatio}
+\cite{fang2022spatio} learns a spatio-temporal representation. Two steps, which is based on learning a spatial model, a temporal model and a co-attention fusion module. It is based on a road network, trajectories are sequences of vertex on the road network.
+
+Define the distance of a spatio-temporal trajectory as a weighted sum for a spatio-distance ($d_s$) and a temporal distance ($d_t$):
+
+$$d(\tau_i, \tau_j) = \alpha d_s(\tau_i, \tau_j) + (1-\alpha)d_t(\tau_i, \tau_j) | \alpha \in [0,1]$$
+
+Later uses \glspl{lstm} to learn using two strategies, using one \gls{lstm} for space and another for time, or using one for both.
 
 \subsection*{2022 - Deep Fuzzy Contrast-Set Deviation Point Representation and Trajectory Detection}
-\cite{ahmed2022deep}
+\cite{ahmed2022deep} Grid-map based, contrastive learning. 
+
+\textbf{notes:} hard to understand what they are doing here.
 
 \subsection*{2022 - Contrastive Pre-training of Spatial-Temporal Trajectory Embeddings}
-\cite{lin2022contrastive}
+\cite{lin2022contrastive} employs contrastive learning for learning an embedding which retains high-level travel semantics.
+
+Recovering the original trajectory is not a good approach when learning representations with \glspl{rnn} since it fails to capture the high-level information of trajectories. Contrastive learning with noisy augmentation can handle the high-level information while being robust to noise. However data augmentation needs to be well designed. 
+
+The positive samples are created with subsampling the query trajectory, while the negative samples come from different trajectories.
+
+\textbf{Notes:} Not sure this is correct, I think the ``different trajectories'' should be far enough from the query trajectory to be a negative sample.
+
+The encoder stacks a spatio-temporal encoding layer and attention layers. For the first, a learnable encoding of locations is learned (each location leads to a vector) and location and time are passed to a trigonometric vector transformation to compute features which can capture periodic information; those vectors are then summed up. The attention layer is actually 2 stacked attention layers.
+
 
 \subsection*{2022 - TMN: Trajectory Matching Networks for Predicting Similarity}
-\cite{yang2022tmn}
+\cite{yang2022tmn} uses attention to compute intra-trajectory similarities, and then uses a \gls{lstm}.
+
+\textbf{Notes:} Comparison ignores many methods.
 
 \subsection*{2022 - TSNE: Trajectory Similarity Network Embedding}
-\cite{ding2022tsne}
+\cite{ding2022tsne} uses a pre-defined trajectory measure function to construct a k-NNG (K nearest neighbours graph) and computes the embedding based on the graph.
+
+\textbf{Notes:} Not sure how they compute the embedding from the graph. Seems like the graph representation allows to handle partial similarity and unordered similarity.
 
 \subsection*{2022 - Towards robust trajectory similarity computation: Representation-based spatio-temporal similarity quantification}
 \cite{chen2022towards}
