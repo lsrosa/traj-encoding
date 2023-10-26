@@ -88,6 +88,7 @@ The loss for training is $\mathcal{L}{\tau_i, \tau_j}=\sum_k w_k(f(\tau_i, \tau_
 \subsection*{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
 
 \textbf{Name:Traj2SimVec}
+
 \cite{zhang2020trajectory} follows the same idea as in \cite{yao2019computing} which selects some trajectories for pre-training \rev{something}, the training samples are divided in three sub-trajectories \rev{because it seems to help learning}.
 
 A distance matrix is computed which is used as supervision signal, similar to \cite{yao2019computing}.
@@ -177,16 +178,76 @@ The encoder stacks a spatio-temporal encoding layer and attention layers. For th
 \textbf{Notes:} Not sure how they compute the embedding from the graph. Seems like the graph representation allows to handle partial similarity and unordered similarity.
 
 \subsection*{2022 - Towards robust trajectory similarity computation: Representation-based spatio-temporal similarity quantification}
-\cite{chen2022towards}
+\textbf{Name: RSTS} 
 
-\subsection*{2023 - GRLSTM: Trajectory Similarity Computation with Graph-Based Residual LSTM}
-\cite{zhou2023grlstm}
+\cite{chen2022towards} splits the spatio-temporal trajectories into cells, and uses a triplet loss for the learning.
+%
+It enforces that if the time and space similarities are higher, then the distance in the encoded space must be smaller, and that, in the encoded space, the distance between two trajectories variations (noise and downsampling) must obey the distance of the trajectories.
+
+An embedding is used for the tokens, which are then passed to a \gls{rnn} encoder-decoder. The tokens for the embedded are an ID computed by splitting the space-time into cells. The input is grid-cells (gps + time).
+
+\textbf{Notes:} Analysis is poor. Ignores all other works on learning. Seems like there is little innovation besides the loss.
+
 
 \subsection*{2023 - Spatial-temporal fusion graph framework for trajectory similarity computation}
-\cite{zhou2023spatial}
+
+\textbf{Name: GTS}
+
+\cite{zhou2023spatial} first learns a point of interest representation on the road network, which is passed to a \gls{gnn} for learning neighbours information as embeddings, and then a \gls{lstm} for learning the sequencing.
+
+
+
+A symmetric distance  between trajectories is defined based on the distance between each point of the trajectories and the other trajectory:
+$$
+d(\tau_1, \tau_2) = \sum_{v\in\tau_1}e^{-d(v, \tau_2)} + \sum_{v\in\tau_2}e^{-d(v, \tau_1)}
+$$
+
+The time is considered in an extension called \texttt{ST-LSTM}, which adds a time one-hot encoding into the gating functions of the \gls{lstm}.
+
+\textbf{Notes:} Comparisons goes as far as \texttt{traj2SimVec} \cite{zhang2020trajectory}.
+
+\subsection*{2023 - GRLSTM: Trajectory Similarity Computation with Graph-Based Residual LSTM}
+
+\textbf{Name: GRLSTM}
+
+\cite{zhou2023grlstm} combines \gls{kge}, \gls{gnn} and a multi-layer residual-\gls{lstm}.
+%
+\gls{kge} is used to learn a point and relation embeddings for constructing a graph, which is passed to the \gls{gnn} for learning the topology in the point-structure graph. Then the \gls{lstm} is used to learn the embeddings trajectories.
+%
+Uses two losses: a graph-based loss and a trajectory-base loss.
+
+The input is trajectories in a graph road network. The interesting thing here is that adjacent points in the trajectory may not be adjacent in the graph (due to data loss or lower sample rate).
+
+The stacked \gls{lstm} is augmented with a residual layer for handling the gradient forgetting of traditional \gls{lstm}. It is stated that it does not add parameters so it does not affect training time considerably.
+
+\textbf{Notes:} does not really say how the residual function is computed. Similarly to \cite{han2021graph} they implement point and trajectory distances. 
 
 \subsection*{2023 - Contrastive Trajectory Similarity Learning with Dual-Feature Attention}
-\cite{chang2023contrastive}
+
+\textbf{Name: TrajCL}
+
+\cite{chang2023contrastive} introduces four trajectory augmentation and a dual feature self-attention encoder, for learning structural and spatial patterns of trajectories. It does not involve any recurrent structure. Instead, it uses a dual self-attention-based trajectory encoder.
+
+Augmentations:
+\begin{description}
+	\item[point shifting:] adds an offset to the points
+	\item[point masking] randomly removes points from the trajectory
+	\item[tuncation] cuts a prefix, suffix, or both from the trajectory
+	\item[simplification] uses the Douglas–Peucker algorithm which removes non critical points from the trajectories (like points in a straight line).
+\end{description}
+
+The augmented trajectories are used to create two trajectory views to learn structural and spatial features. The augmented trajectories are used to compute two trajectory views.
+%
+The structural features, the map is converted into a grid, and used to create a graph in which the grid locations are the vertices and the trajectory transitions the edges. Then a graph embedding (\texttt{node2vec}) is used to learn an embedding.
+%
+For the spatial features, the angle and length of trajectory segments is computed.
+%
+Both views are augmented by adding a \rev{sketchy} sine and cosine value to the points to capture position information.
+
+Finally the two views are passed to a two-head self attention module to learn the embeddings.
+
+
+
 
 \subsection*{2023 - Spatio-Temporal Trajectory Similarity Measures: A Comprehensive Survey and Quantitative Study}
 \cite{hu2023spatio}
