@@ -35,7 +35,26 @@ Sampling is performed using Farthest Point Sampling.
 \textbf{Notes:} It is interesting that they added semantics to the network.
 
 \subsection*{2022 - Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration}
-\cite{miao2022promoting}
+
+\cite{miao2022promoting} propose a trajectory embedding using \gls{vae} and \gls{lstm} with similarity constrains, which is used with a hierarchical trajectory space exploration to generate diverse samples in a reinforcement learning framework.
+
+The encoder is a double layer bi-directional \gls{lstm}, and the hidden state is formed by the last state of both encoding-\glspl{lstm}.
+%
+The decoder is an one layer \gls{lstm} which take as input the first trajectory state and the hidden variable.
+%
+The constraint is computed by sampling a batch of trajectories and ordering them according to \rev{point location distance?}, the closest one in the batch is the positive sample and the bottom half are negative samples, and a loss function is computed using the encodings of the anchor, positive and negative samples.
+%
+A hidden-state conditioned \glossary{bc} policy is added, learning $\pi:z, s \rightarrow a$, which is trained together with the encoder-decoder.
+
 
 \subsection*{2023 - SIRL: Similarity-Based Implicit Representation Learning}
-\cite{bobu2023sirl}
+
+\textbf{Name: Similarity-based Implicit Representation Learning (SIRL)}
+
+\cite{bobu2023sirl} propose to ask humans what are similar trajectories (robotics manipulation), allowing to distinguish high- and low-level features for learning tasks. \rev{sort of evolution of "learning one feature at a time".}.
+%
+A trajectory query is a triplet of trajectories which are presented to the user, who is asked which are the two most similar, forming a tripled (anchor, positive and negative) \rev{vae?}.
+
+The triples are used to learn am embedding space such similar trajectories are close in the representation space, and dissimilar ones are far apart.
+%
+The features are learned using a fully connected \glspl{nn}, which are trained based on the distance in the embedding space using a contrastive loss based on the human triplet selection.
