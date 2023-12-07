@@ -193,7 +193,6 @@ def load_bib_files(bib_files, verbose=False):
             print(bib_file)
         with open(bib_file) as f:
             db.update(bibtexparser.load(f).entries_dict)
-            print(len(db))
     return db
 
 

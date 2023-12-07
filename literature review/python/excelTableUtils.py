@@ -1,12 +1,28 @@
 import pandas as pd
 from bibkeys import get_all_keys
+from utils import compare_sets
 
-def populate_table(bibkeys, file_name, verbose):
+def populate_table(bibkeys, table_file='surveyTable.xlxs', sheet='Sheet1', verbose=False):
+    """
+        Pupulates the xlxs table with all bibkeys found in the latex files
+    """
     keys = get_all_keys(bibkeys)
     keys = list(set(keys))#make an unique list
+    if verbose: print('# keys latex:', len(keys))
     
-    df = pd.DataFrame(keys, columns=['bibkey'])
-    df.to_excel(file_name)
+    keys_on_table = get_table_column('bibkey', table_file, sheet, options=False)
+    if verbose: print('# keys on table:', len(keys_on_table))
+    
+    [_, diff_keys, _] = compare_sets(keys, keys_on_table)
+    if len(diff_keys) == 0: 
+        if verbose: print('All keys already on table. Doing nothing')
+        return
+    elif verbose: print('Adding keys: ', diff_keys)
+    
+    with pd.ExcelWriter(table_file, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
+        df = pd.DataFrame(diff_keys, columns=['bibkey'])
+        df.to_excel(writer, index=False, startrow=2+len(keys_on_table), header=False)
+
     return
 
 def get_complete_key(key, table):
@@ -17,48 +33,25 @@ def get_complete_key(key, table):
 
     return complete_key
 
+def get_table_column(column_name, table_file='surveyTable.xlxs', sheet='Sheet1', options=False):
+    """
+    Reads a whole column of the excel table. also gets the options in the first row for each 
+    feature defined by a column
+    """
+    
 
-def get_table_column(sheet_names, column_name):
-
-    final_column = []
-
-    # Iterate through every sheet and get bib keys
-    for sheet_name in sheet_names:
-        IIL_table_sheet = pd.read_excel('IIL survey table.xlsx', sheet_name=sheet_name)
-        complete_column_name = get_complete_key(column_name, IIL_table_sheet)
-        column = IIL_table_sheet.loc[:, complete_column_name].values.tolist()  # get column as list of strings
-        final_column += column  # concatenate columns
-
-    if column_name == 'bibtex':
-        final_column = bibkeys_from_bibtex(final_column)
-
-    return final_column
-
-
-def get_table_column2(sheet_names, column_name, table_file='IIL survey table.xlsx', options=False):
-
-    final_column = []
-
-    # Iterate through every sheet and get bib keys
-    for sheet_name in sheet_names:
-        IIL_table_sheet = pd.read_excel(table_file, sheet_name=sheet_name)
-        complete_column_name = get_complete_key(column_name, IIL_table_sheet)
-        
-        # get column as list of strings
-        # 2: to skip the header rows
-        column = IIL_table_sheet.loc[2:, complete_column_name].values.tolist()
-
-        final_column += column  # concatenate columns
-    if column_name == 'bibtex':
-        final_column = bibkeys_from_bibtex(final_column)
-        return final_column
-    elif options:
-        opt = str(IIL_table_sheet.loc[0, complete_column_name]).replace('[','').replace(']','').split(', ')
-        return final_column, opt
+    table_sheet = pd.read_excel(table_file, sheet_name=sheet)
+    complete_column_name = get_complete_key(column_name, table_sheet)
+    
+    # get column as list of strings
+    # 1: to skip the header rows
+    column = table_sheet.loc[1:, complete_column_name].values.tolist()
+    
+    if options:
+        opt = str(table_sheet.loc[0, complete_column_name]).replace('[','').replace(']','').split(', ')
+        return column, opt
     else:
-        return final_column
-
-
+        return column
 
 def bibkeys_from_bibtex(bibtex_list):
     bibkeys = []
