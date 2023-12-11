@@ -38,7 +38,6 @@ def get_table_column(column_name, table_file='surveyTable.xlxs', sheet='Sheet1',
     Reads a whole column of the excel table. also gets the options in the first row for each 
     feature defined by a column
     """
-    
 
     table_sheet = pd.read_excel(table_file, sheet_name=sheet)
     complete_column_name = get_complete_key(column_name, table_sheet)

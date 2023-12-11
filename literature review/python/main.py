@@ -7,6 +7,9 @@ from bibkeys import get_bib_keys, load_bib_files
 # Excel table functions
 from excelTableUtils import populate_table, get_table_column
 
+# Citation Maps
+from citationMap import build, draw
+
 #%% reads latex source
 
 # compose list of .bib files
@@ -25,4 +28,6 @@ populate_table(bibkeys_latex, table_file=excel_file,  verbose=True)
 col_keys = get_table_column('bibkey', excel_file, options=False)
 col_scope, scopes = get_table_column('Scope', excel_file, options=True)
 
-
+#%% Try plotting the citation maps
+build(bibfile_db)
+draw()
