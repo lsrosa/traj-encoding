@@ -4,11 +4,21 @@
 
 \cite{losey2020controlling} Use encoders to learn latent task representations for assistive robot remote controlling. In this setup, \glspl{vae} are used, encoding states into a task representation, the user gives input from a joystick which are decoded together with the latent space representation.
 
-\textbf{Notes:} Seems like \gls{vae} is used straight up with the trajectories. But it is a bit blurry how the actions are being defined or learned (seem pre defined).
+The latent representation is encoded ($\phi$) from state ($s$) and action ($a$), and decode from latent state ($z$) and state into action.
 
-\cite{losey2022learning} presents more details.
+There is an emphasis on desired characteristics of the latent representation:
+
+\begin{description}
+	\item[controlability:] $s_i = T(s_{i-1}, \phi(s_{i-1}, z_{i-1}))$, where $T$ is the transition function. Meaning that using the latent states should lead to the same actions as the ones in the training set.
+	\item[consistency:] $|T(s_{i}, \phi(s_{i}, z_{i})) - T(s_{j}, \phi(s_{j}, z_{j}))| \leq \epsilon$ if $|s_i-s_j|\leq \delta$.
+	\item[scalability:] $|T(s_{i}, \phi(s_{i}, z_{i})) - T(s_{j}, \phi(s_{j}, z_{j}))| \rightarrow \inf$ if $|s_i-s_j| \rightarrow \inf$
+\end{description}
+
+\textbf{Notes:} Seems like \gls{vae} is used straight up with the trajectories. But it is a bit blurry how the actions are being defined or learned (seem pre defined). \gls{cvae} seems to outperform other encoders.
 
 \subsection*{2020 - DiversityGAN: Diversity-Aware Vehicle Motion Prediction via Latent Semantic Sampling}
+
+\textbf{Name: DiversityGAN}
 
 \cite{huang2020diversitygan} extends \gls{gan} using a low-dimensional approximate semantic (encoding) which is shaped to capture semantics. Sampling from this space allows to cover semantically distinguish outcomes. The work focuses on predicting vehicle trajectories.
 
@@ -34,7 +44,15 @@ Sampling is performed using Farthest Point Sampling.
 
 \textbf{Notes:} It is interesting that they added semantics to the network.
 
+\subsection*{2022 - Controlling Assistive Robots with Learned Latent Actions}
+
+\cite{losey2022learning} expands on \cite{losey2020controlling} for assistive robotics. Here the latent space takes in consideration human input from a low-dimensional joystick, allowing to encode actions (e.g., cut, pour, dance) using buttons.
+
+A \gls{mlp} is used to learn an alignment between the user's intention/preferences and the context.
+
 \subsection*{2022 - Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration}
+
+\textbf{Name: HTSE}
 
 \cite{miao2022promoting} propose a trajectory embedding using \gls{vae} and \gls{lstm} with similarity constrains, which is used with a hierarchical trajectory space exploration to generate diverse samples in a reinforcement learning framework.
 
@@ -48,7 +66,7 @@ A hidden-state conditioned \glossary{bc} policy is added, learning $\pi:z, s \ri
 
 \subsection*{2023 - SIRL: Similarity-Based Implicit Representation Learning}
 
-\textbf{Name: Similarity-based Implicit Representation Learning (SIRL)}
+\textbf{Name: SIRL}
 
 \cite{bobu2023sirl} propose to ask humans what are similar trajectories (robotics manipulation), allowing to distinguish high- and low-level features for learning tasks. \rev{sort of evolution of "learning one feature at a time".}.
 %
