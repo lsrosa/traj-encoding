@@ -14,24 +14,6 @@ When plotting these parameters, clusters emerge with different navigation styles
 
 \textbf{Notes:} No encoding here. 
 
-\subsection*{2018 - Social GAN: Socially Acceptable Trajectories With Generative Adversarial Networks}
-
-\textbf{SGAN}
-
-\cite{gupta2018social} proposed an \gls{lstm} encoder-decoder with max-pooling layer for handling interdependencies (the trajectory of a person depends on the trajectory of others).
-%
-The encoder decoder is trained in a \gls{gan} fashion, in which uses an \gls{lstm}-based discriminator.
-
-There is one \gls{lstm} encoder, decoder and discriminator for each tracked individual.
-%
-On the encoder, first the individual's position is passed through an $1$ layer \gls{mlp} to be transformed into a fixed-sized vector, which is then passed to the \gls{lstm}. The weights of the encoders are shared among all individuals.
-%
-The pooling module converts the hidden-state of every encoding \gls{lstm} into tensor for each individual.
-%
-The decoder is a straight-forward \gls{lstm} and the discriminator takes the predicted trajectories and classifies encodes them using \gls{lstms} into "good" or "bad".
-
-The pooling mechanism is what handles multiple people.
-
 \subsection*{2018 - Soft + Hardwired attention: An LSTM framework for human trajectory prediction and abnormal event detection}
 
 \cite{fernando2018soft+}
