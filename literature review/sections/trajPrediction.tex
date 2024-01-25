@@ -1,5 +1,23 @@
 \section{Trajectory Prediction}\label{sec: traj prediction}
 
+\subsection*{2018 - Convolutional Social Pooling for Vehicle Trajectory Prediction}
+
+\textbf{Name: CS-LSTM}
+
+\cite{deo2018convolutional} \gls{cs-lstm} uses an \gls{lstm} encoder-decoder together with a convolutional social pooling for learning interdependencies between vehicles in the street, outputting multi-modal predictions of trajectories based on maneuver classes.
+%
+The interdependencies are important because the decision possible trajectory of one car depends on the predicted trajectory of the other ones.
+
+Tests are a simple simulator, maneuvers are ${\texttt{keep lane}, \texttt{change to right}, \texttt{change to left}}$, so it is a very simple test case.
+
+The encoder is one \gls{lstm} for each vehicle, but all \glspl{lstm} have the same weights.
+%
+The encoded state for the target vehicle is concatenated with an encoded state for all other vehicles, which is obtained by passing their \gls{lstm} states into the convolutional maxpooling.
+%
+There is one decode for each maneuver for enabling multi-modality.
+
+\textbf{Notes:} This interdependency is similar to the idea of the robot-human case.
+
 \subsection*{2018 - 3DOF Pedestrian Trajectory Prediction Learned from Long-Term Autonomous Mobile Robot Deployment Data}
 
 \cite{sun20183dof}
