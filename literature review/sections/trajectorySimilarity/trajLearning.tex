@@ -1,12 +1,12 @@
-\section{Trajectory Learning}\label{sec: traj learning}
+\subsection{Trajectory Learning}\label{sec: traj learning}
 
-\subsection*{2014 - Sequence to Sequence Learning with Neural Networks}
+\method{2014 - Sequence to Sequence Learning with Neural Networks}
 
 \textbf{Name: seq2seq}
 
 \cite{sutskever2014sequence}
 
-\subsection*{2017 - Identifying Human Mobility via Trajectory Embeddings}
+\method{2017 - Identifying Human Mobility via Trajectory Embeddings}
 
 \textbf{Name: TULER}
 
@@ -23,7 +23,7 @@ There is a location embedding, not sure how that is computed. But the trajectori
 The sequence of location embedding is passed onto the \gls{lstm}, not sure how they handle different trajectory lengths.
 
 
-\subsection*{2018 - Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings}
+\method{2018 - Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings}
 
 \textbf{Name: SeCTAR}
 
@@ -37,7 +37,7 @@ The state encoder and decoder are \glspl{rnn} and the policy decoder is a feed-f
 
 In the paper, the policy has unknown dynamics, and hence the \gls{rl} setup. Trajectories are continuos poses of joints over time. Tested in simulation. 
 
-\subsection*{2018 - Anomalous Trajectory Detection Using Recurrent Neural Network}
+\method{2018 - Anomalous Trajectory Detection Using Recurrent Neural Network}
 
 \textbf{Name: ATD-RNN}
 
@@ -53,7 +53,7 @@ The trajectories are padded in order to get trajectories of the same length.
 
 \gls{lstm} and \gls{gru} are two special types of \glspl{rnn} are tested. \glspl{gru} seems to work better.
 
-\subsection*{2018 - Deep Representation Learning for Trajectory Similarity Computation}
+\method{2018 - Deep Representation Learning for Trajectory Similarity Computation}
 
 \textbf{Name: t2vec}
 \textbf{Code on:} \url{https://github.com/boathit/t2vec}
@@ -69,7 +69,7 @@ Handling varying sampling rates is done by augmenting the training data creating
 \textbf{Notes:} The paper is very confusing. I do not really know that are the inputs and outputs or how the sequences are fed in the \gls{rnn} inside the encoder.
 
 
-\subsection*{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
+\method{2020 - Trembr: Exploring Road Networks for Trajectory Representation Learning}
 
 \textbf{Name: Trembr}
 
@@ -79,7 +79,7 @@ The \gls{rnn} decoder is conditioned to the road network, and the training is ma
 
 \textbf{Notes:} Maybe the secret for velocities profiles is in the addition of time to the loss.
 
-\subsection*{2019 - Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach}
+\method{2019 - Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach}
 
 \textbf{Name: NeuTraj}
 
@@ -97,7 +97,7 @@ The loss for training is $\mathcal{L}{\tau_i, \tau_j}=\sum_k w_k(f(\tau_i, \tau_
 
 \textbf{Notes:} map is like google map.
 
-\subsection*{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
+\method{2020 - Trajectory similarity learning with auxiliary supervision and optimal matching}
 
 \textbf{Name:Traj2SimVec}
 
@@ -105,13 +105,13 @@ The loss for training is $\mathcal{L}{\tau_i, \tau_j}=\sum_k w_k(f(\tau_i, \tau_
 
 A distance matrix is computed which is used as supervision signal, similar to \cite{yao2019computing}.
 
-\subsection*{2020 - MARC: a robust method for multiple-aspect trajectory classification via space, time, and semantic embeddings}
+\method{2020 - MARC: a robust method for multiple-aspect trajectory classification via space, time, and semantic embeddings}
 
 \textbf{Name: MARC}
 
 \cite{may2020marc} Embeds semantics on the trajectories. Each semantic information (weather, time, type of place) has an encoding, and a weight matrix which transform them into a fixed size vector. The semantic trajectory is fed to an \gls{lstm}, which encodes the trajectories, having the hidden states used for classification.
 
-\subsection*{2021 - Embedding-Based Similarity Computation for Massive Vehicle Trajectory Data}
+\method{2021 - Embedding-Based Similarity Computation for Massive Vehicle Trajectory Data}
 
 \textbf{Name: L2R*}
 
@@ -119,7 +119,7 @@ A distance matrix is computed which is used as supervision signal, similar to \c
 
 Adds a ranking learning loss on \cite{yao2019computing}
 
-\subsection*{2021 - STENet: A hybrid spatio-temporal embedding network for human trajectory forecasting}
+\method{2021 - STENet: A hybrid spatio-temporal embedding network for human trajectory forecasting}
 
 \textbf{Name: STENet}
 
@@ -129,7 +129,7 @@ They give related works on social trajectory learning.
 
 \textbf{Notes:} They point to \glspl{vae} for modelling multi-modality and for the generative capabilities. 
 
-\subsection*{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
+\method{2021 - A Graph-Based Approach for Trajectory Similarity Computation in Spatial Networks}
 
 \textbf{Name: GTS}
 
@@ -137,13 +137,13 @@ They give related works on social trajectory learning.
 
 A trajectory is encoded as the points in a graph map. Then they define a trajectory similarity metric on the \gls{poi} graph, based on the graph distance between the points and trajectories. An embedding capturing the neighbours and graph trajectory is learned. The \gls{poi} embeddings and their neighbours are used to learn another embedding using its neighbours information. Finally, \glspl{lstm} are used to learn the trajectory over the graph embeddings. The loss function minimizes the above defined distance between trajectories and the distance between the two closest trajectories.
 
-\subsection*{2021 - T3S: Effective Representation Learning for Trajectory Similarity Computation}
+\method{2021 - T3S: Effective Representation Learning for Trajectory Similarity Computation}
 
 \textbf{Name: T3S}
 
 \cite{yang2021t3s} combines \glspl{lstm} and attention \glspl{nn} over the grid graph for learning the embedding. Close to \cite{yao2019computing, zhang2020trajectory, chen2021embedding}.
 
-\subsection*{2021 - How meaningful are similarities in deep trajectory representations?}
+\method{2021 - How meaningful are similarities in deep trajectory representations?}
 
 \textbf{Code on:} \url{https://dbis.ipd.kit.edu/2652.php}
 
@@ -160,7 +160,7 @@ Concludes that using \gls{lcss} and \texttt{t2vec} leads to a better trajectory 
 \textbf{Notes:} Maybe that should be $4$ characteristics to consider for explainability.   
 
 
-\subsection*{2022 - Spatio-Temporal Trajectory Similarity Learning in Road Networks}
+\method{2022 - Spatio-Temporal Trajectory Similarity Learning in Road Networks}
 
 \textbf{Name: ST2vec}
 
@@ -172,13 +172,13 @@ $$d(\tau_i, \tau_j) = \alpha d_s(\tau_i, \tau_j) + (1-\alpha)d_t(\tau_i, \tau_j)
 
 Later uses \glspl{lstm} to learn using two strategies, using one \gls{lstm} for space and another for time, or using one for both.
 
-\subsection*{2022 - Deep Fuzzy Contrast-Set Deviation Point Representation and Trajectory Detection}
+\method{2022 - Deep Fuzzy Contrast-Set Deviation Point Representation and Trajectory Detection}
 
 \cite{ahmed2022deep} Grid-map based, contrastive learning. 
 
 \textbf{notes:} hard to understand what they are doing here.
 
-\subsection*{2022 - Contrastive Pre-training of Spatial-Temporal Trajectory Embeddings}
+\method{2022 - Contrastive Pre-training of Spatial-Temporal Trajectory Embeddings}
 
 \textbf{Name: CSTTE}
 
@@ -193,7 +193,7 @@ The positive samples are created with subsampling the query trajectory, while th
 The encoder stacks a spatio-temporal encoding layer and attention layers. For the first, a learnable encoding of locations is learned (each location leads to a vector) and location and time are passed to a trigonometric vector transformation to compute features which can capture periodic information; those vectors are then summed up. The attention layer is actually 2 stacked attention layers.
 
 
-\subsection*{2022 - TMN: Trajectory Matching Networks for Predicting Similarity}
+\method{2022 - TMN: Trajectory Matching Networks for Predicting Similarity}
 
 \textbf{Name: TMN}
 
@@ -201,7 +201,7 @@ The encoder stacks a spatio-temporal encoding layer and attention layers. For th
 
 \textbf{Notes:} Comparison ignores many methods.
 
-\subsection*{2022 - TSNE: Trajectory Similarity Network Embedding}
+\method{2022 - TSNE: Trajectory Similarity Network Embedding}
 
 \textbf{Name: TSNE}
 
@@ -209,7 +209,7 @@ The encoder stacks a spatio-temporal encoding layer and attention layers. For th
 
 \textbf{Notes:} Not sure how they compute the embedding from the graph. Seems like the graph representation allows to handle partial similarity and unordered similarity.
 
-\subsection*{2022 - Towards robust trajectory similarity computation: Representation-based spatio-temporal similarity quantification}
+\method{2022 - Towards robust trajectory similarity computation: Representation-based spatio-temporal similarity quantification}
 
 \textbf{Name: RSTS} 
 
@@ -222,7 +222,7 @@ An embedding is used for the tokens, which are then passed to a \gls{rnn} encode
 \textbf{Notes:} Analysis is poor. Ignores all other works on learning. Seems like there is little innovation besides the loss.
 
 
-\subsection*{2023 - Spatial-temporal fusion graph framework for trajectory similarity computation}
+\method{2023 - Spatial-temporal fusion graph framework for trajectory similarity computation}
 
 \textbf{Name: GTS}
 
@@ -239,7 +239,7 @@ The time is considered in an extension called \texttt{ST-LSTM}, which adds a tim
 
 \textbf{Notes:} Comparisons goes as far as \texttt{traj2SimVec} \cite{zhang2020trajectory}.
 
-\subsection*{2023 - GRLSTM: Trajectory Similarity Computation with Graph-Based Residual LSTM}
+\method{2023 - GRLSTM: Trajectory Similarity Computation with Graph-Based Residual LSTM}
 
 \textbf{Name: GRLSTM}
 
@@ -255,7 +255,7 @@ The stacked \gls{lstm} is augmented with a residual layer for handling the gradi
 
 \textbf{Notes:} does not really say how the residual function is computed. Similarly to \cite{han2021graph} they implement point and trajectory distances. 
 
-\subsection*{2023 - Contrastive Trajectory Similarity Learning with Dual-Feature Attention}
+\method{2023 - Contrastive Trajectory Similarity Learning with Dual-Feature Attention}
 
 \textbf{Name: TrajCL}
 
@@ -280,7 +280,7 @@ Both views are augmented by adding a \rev{sketchy} sine and cosine value to the 
 Finally the two views are passed to a two-head self attention module to learn the embeddings.
 
 
-\subsection*{2023 - Spatio-Temporal Trajectory Similarity Measures: A Comprehensive Survey and Quantitative Study}
+\method{2023 - Spatio-Temporal Trajectory Similarity Measures: A Comprehensive Survey and Quantitative Study}
 
 \textbf{Code on:} \url{https://github.com/ZJU-DAILY/TSM}
 

@@ -1,6 +1,6 @@
-\section{Trajectory Learning on Robotics}\label{sec: traj learning robotics}
+\subsection{Trajectory Learning on Robotics}\label{sec: traj learning robotics}
 
-\subsection*{2020 - Controlling Assistive Robots with Learned Latent Actions}
+\method{2020 - Controlling Assistive Robots with Learned Latent Actions}
 
 \cite{losey2020controlling} Use encoders to learn latent task representations for assistive robot remote controlling. In this setup, \glspl{vae} are used, encoding states into a task representation, the user gives input from a joystick which are decoded together with the latent space representation.
 
@@ -16,7 +16,7 @@ There is an emphasis on desired characteristics of the latent representation:
 
 \textbf{Notes:} Seems like \gls{vae} is used straight up with the trajectories. But it is a bit blurry how the actions are being defined or learned (seem pre defined). \gls{cvae} seems to outperform other encoders.
 
-\subsection*{2020 - DiversityGAN: Diversity-Aware Vehicle Motion Prediction via Latent Semantic Sampling}
+\method{2020 - DiversityGAN: Diversity-Aware Vehicle Motion Prediction via Latent Semantic Sampling}
 
 \textbf{Name: DiversityGAN}
 
@@ -44,13 +44,13 @@ Sampling is performed using Farthest Point Sampling.
 
 \textbf{Notes:} It is interesting that they added semantics to the network.
 
-\subsection*{2022 - Controlling Assistive Robots with Learned Latent Actions}
+\method{2022 - Controlling Assistive Robots with Learned Latent Actions}
 
 \cite{losey2022learning} expands on \cite{losey2020controlling} for assistive robotics. Here the latent space takes in consideration human input from a low-dimensional joystick, allowing to encode actions (e.g., cut, pour, dance) using buttons.
 
 A \gls{mlp} is used to learn an alignment between the user's intention/preferences and the context.
 
-\subsection*{2022 - Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration}
+\method{2022 - Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration}
 
 \textbf{Name: HTSE}
 
@@ -64,7 +64,7 @@ The constraint is computed by sampling a batch of trajectories and ordering them
 %
 A hidden-state conditioned \glossary{bc} policy is added, learning $\pi:z, s \rightarrow a$, which is trained together with the encoder-decoder.
 
-\subsection*{2023 - SIRL: Similarity-Based Implicit Representation Learning}
+\method{2023 - SIRL: Similarity-Based Implicit Representation Learning}
 
 \textbf{Name: SIRL}
 
