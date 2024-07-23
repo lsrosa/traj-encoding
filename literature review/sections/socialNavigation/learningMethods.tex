@@ -1,0 +1,117 @@
+\subsection{Learning Methods for Social Navigation}\label{subsec: learning social navigation}
+
+\method{2016 - Learning Social Etiquette: Human Trajectory Understanding In Crowded Scenes}
+
+\cite{robicquet2016learning} provide a benchmark for social navigation with interactions between pedestrians, skaters, bikers, and small vehicles. 
+%
+The benchmark contain images (videos) of these interactions in a campus.
+
+A feature called social sensitivity is proposed, which incorporates a distance which the target prefers for avoiding collision and another in which the targets starts to deviate from its trajectory to avoid collision.
+%
+These parameters are learned with an energy-like minimization.
+%
+When plotting these parameters, clusters emerge with different navigation styles.
+
+\textbf{Notes:} No encoding here. 
+
+\method{2017 - DESIRE: Distant Future Prediction in Dynamic Scenes With Interacting Agents}
+
+\textbf{Name: DESIRE}
+
+\cite{lee2017desire}
+
+\method{2018 - Soft + Hardwired attention: An LSTM framework for human trajectory prediction and abnormal event detection}
+
+\cite{fernando2018soft+} proposes a framework which uses soft and hardwired attention mechanisms to predict human trajectories based on a brief history of the target's and its neighbors trajectories.
+
+Trajectories for each pedestrian are encoded and decoded using \glspl{lstm} encoders and passes to the soft and hard attention layers to compute the final encoding, which is then decoded.
+%
+The key idea is to use the distance to compute weights for the hard attention layer, since these are key features that influence in the trajectory.
+
+The approach is also evaluated in computing abnormal trajectories based on the proposed encoding.
+
+\method{2019 - Pedestrian Trajectory Prediction Using RNN Encoder-Decoder with Spatio-Temporal Attentions}
+
+\cite{bhujel2019pedestrian} proposes using not only the humans trajectories, but also information from the scene for predicting trajectories, using an \gls{rnn} for learning human-human and human-scene interactions, using attention mechanisms to find semantic alignment between the encoder and decoder.
+
+Images as processed with a pre-trained \gls{cnn} for extracting environment features and attention mechanisms are computed before the decoding part.
+
+\rev{this paper is very bad and should probably be kicked out}
+
+\method{2019 - GD-GAN: Generative Adversarial Networks for Trajectory Prediction and Group Detection in Crowds}
+
+\cite{fernando2019gd} proposes a framework which predicts trajectories and group memberships through clustering.
+%
+It builds on top of \cite{fernando2018soft+}, which uses \glspl{lstm} for learning an embedding for trajectories with attention mechanisms, here, the decoder is a \gls{gan} architecture with generators and discriminators being \glspl{lstm}.
+%
+The embedding is passed through a \gls{tsne} module for dimensionality reduction and a further clustering predicts group membership. 
+
+\method{2019 - The Trajectron: Probabilistic Multi-Agent Trajectory Modeling With Dynamic Spatiotemporal Graphs}
+
+\cite{ivanovic2019trajectron} presents the \texttt{trajectron} ...
+
+\method{2020 - Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data}
+
+\cite{salzmann2020trajectron++}  presents a graph structured recurrent model for learning trajectories considering dynamics and environment constraints (maps) by extending \cite{ivanovic2019trajectron} by adding support to multi-agents and heterogeneous data. The robot in question is an autonomous car traveling in a city.
+
+The scene is represented as a graph, with nodes representing agents (cars and ppl), and edges representing interactions.
+%
+The scene evolution is encoded by a \gls{lstm} and attention is used to balance the weights in the interactions.
+%
+Finally a \gls{cnn} is used to aggregate heterogeneous data from a map, and semantic semantic information (pedestrian crossing", "drivable area", "walkway"). 
+%
+Multi-modality is achieved through the use of \gls{cvae} \rev{but it is not very clear where it is used}.
+
+\method{2020 - It Is Not the Journey But the Destination: Endpoint Conditioned Trajectory Prediction}
+
+\textbf{Name: PECNet}
+
+\cite{mangalam2020not} focus on learning long-range multi-modal trajectory prediction, they propose a social-pooling layer which allows for improving the diversity of the predicted social-compliant trajectories.
+
+Sets of trajectories and destination points are embedded, and the embeddings are uses by a \gls{vae} for computing predicted destination encoding, which is then passed to the social pooling for estimating which is the probable future destination.
+%
+Finally, the future destination encoding is used to estimate the trajectory.
+%
+\rev{the paper is quite confusing}
+
+Tests are made with datasets of humans walking around.
+
+\method{2020 - A Generative Approach for Socially Compliant Navigation}
+
+\cite{tsai2020generative}
+
+\method{2021 - Learning World Transition Model for Socially Aware Robot Navigation}
+
+\cite{cui2021learning}
+
+\method{2021 - Probabilistic Dynamic Crowd Prediction for Social Navigation}
+
+\cite{kiss2021probabilistic}
+
+\method{2021 - Tra2Tra: Trajectory-to-Trajectory Prediction With a Global Social Spatial-Temporal Attentive Neural Network}
+
+\cite{xu2021tra2tra}
+
+\method{2021 - Human Trajectory Forecasting in Crowds: A Deep Learning Perspective}
+
+\cite{kothari2021human}
+
+\method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
+
+\cite{messaoud2021trajectory}
+
+\method{2022 - Social-PatteRNN: Socially-Aware Trajectory Prediction Guided by Motion Patterns}
+
+\cite{navarro2022social}
+
+\method{2023 - CSR: Cascade Conditional Variational Auto Encoder with Socially-aware Regression for Pedestrian Trajectory Prediction}
+
+\cite{zhou2023csr}
+
+\method{2023 - MRGTraj: A Novel Non-Autoregressive Approach for Human Trajectory Prediction}
+
+\cite{peng2023mrgtraj}
+
+\method{2023 - EWareNet: Emotion-Aware Pedestrian Intent Prediction and Adaptive Spatial Profile Fusion for Social Robot Navigation}
+
+\cite{narayanan2023ewarenet}
