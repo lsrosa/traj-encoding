@@ -93,7 +93,23 @@ Both encoding are passed to an adversarial training using demonstrations.
 
 \method{2021 - Human Trajectory Forecasting in Crowds: A Deep Learning Perspective}
 
-\cite{kothari2021human}
+\textbf{Name: DirectContact, TrajNet++}
+
+\cite{kothari2021human} presents a review on deep learning for human trajectory prediction, presents two methods for capturing social interaction and present TrajNet++, a benchmark for evaluating trajectory predictions. \rev{quite a lot of things in one paper}
+
+They focus on short-term trajectory prediction (5 sec), since the long term objective cannot be observed.
+%
+They focus on the interactions of trajectory predictors, not on the predictor (\gls{lstm}) itself.
+%
+Specifically, to handle a variable number of neighbors and how they collective influence one's trajectory.
+
+A pipeline is composed of an encoder, followed by a social model, and then a decoder.
+%
+Social model are classified in grid-based and non-grid-based, they propose a grid based method, using the velocities as observations, as it is natural for learning collision avoidance and leader-follower relations.
+%
+For grid-less method, they propose the \gls{lrp} which traces back which trajectories generate the prediction, and hence improving explainability.
+
+\rev{This paper should also appear on the survey sections since it has a really good and complete literature review and comparison.}
 
 \method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
 
