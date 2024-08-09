@@ -38,7 +38,13 @@ When plotting these parameters, clusters emerge with different navigation styles
 
 \method{2017 - Socially aware motion planning with deep reinforcement learning}
 
+\rev{add to table}
+
 \cite{chen2017socially} Reinforcement learning, social force model \rev{smells like salami with \cite{chen2017decentralized}}
+
+\textbf{Name: SA-CADRL}
+
+\cite{chen2017socially} proposes a motion planning using \gls{drl} which focus on what \textbf{not to do} instead of trying to learn all possible socially acceptable rules.
 
 \method{2018 - Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning}
 
@@ -81,15 +87,28 @@ Both encoding are passed to an adversarial training using demonstrations.
 
 \method{2021 - Learning World Transition Model for Socially Aware Robot Navigation}
 
-\cite{cui2021learning}
+\rev{add to table}
 
+\cite{cui2021learning} propose learning a world transition model from 2D laser scans. The model is used in simulation for learning a policy using a lot of simulated data and few real data.
+
+The laser data is transformed into an obstacle map which is said to better differentiate static from moving obstacles, and the moving ones are encoded with \glspl{lstm}.
+
+In the world simulation, a shared policy is sampled by each agent, meaning that the pedestrian predictors are aware about the robot (NxN).
+
+The approach is tested also with the real robot.
+	
 \method{2021 - Probabilistic Dynamic Crowd Prediction for Social Navigation}
 
-\cite{kiss2021probabilistic}
+\rev{add to table}
 
-\method{2021 - Tra2Tra: Trajectory-to-Trajectory Prediction With a Global Social Spatial-Temporal Attentive Neural Network}
+\cite{kiss2021probabilistic} proposed to predict the crowd flow in a macroscopic way using density and velocities, which are passed to a \gls{rnn} for making predictions which are used for robot planning.
 
-\cite{xu2021tra2tra}
+They use a social invasiveness metric which depends on the total number of interactions in the planning and relative velocity magnitudes.
+
+The \gls{rnn} is convolutional, between each \gls{rnn} layer there are convolution and down-sampling layers (upsampling for the decoder), which is used to predict the trajectories of each crowd group, represented by density, velocity and velocity variance.
+
+Then planning is made minimizing the invasiveness given the crowds predictions and robot dynamics.  
+
 
 \method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
 

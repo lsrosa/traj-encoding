@@ -44,6 +44,25 @@ Tests are made with datasets of humans walking around.
 
 \textbf{Name: DirectContact, TrajNet++}
 
+
+\method{2021 - Tra2Tra: Trajectory-to-Trajectory Prediction With a Global Social Spatial-Temporal Attentive Neural Network}
+
+\rev{add to the table}
+
+\cite{xu2021tra2tra} proposes a global social spatial-temporal attentive \gls{nn}. 
+%
+It separates spatial interaction features with a ?decentralization operation? and attention mechanism, which is then passed to a \gls{lstm}, which is then passed together with velocities an auto-encoder-decoder.
+%
+Multi-modality is achieved by adding a random noise before decoding.
+
+The decentralization subtracts the average positions from the trajectory.
+%
+The attention is a standard attention which gives weights for the features.
+%
+The \gls{lstm} are also standard, and their output is concatenated with velocity information.
+
+tested on datasets with ppl walking around.
+
 \cite{kothari2021human} presents a review on deep learning for human trajectory prediction, presents two methods for capturing social interaction and present TrajNet++, a benchmark for evaluating trajectory predictions. \rev{quite a lot of things in one paper}
 
 They focus on short-term trajectory prediction (5 sec), since the long term objective cannot be observed.
