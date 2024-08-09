@@ -32,19 +32,36 @@ When plotting these parameters, clusters emerge with different navigation styles
 
 \cite{lee2017desire}
 
+
 \method{2017 - Decentralized non-communicating multiagent collision avoidance with deep reinforcement learning}
 
-\cite{chen2017decentralized} Reinforcement learning, social force model
+\rev{add to table}
+
+\cite{chen2017decentralized} A little bit similar with \cite{chen2017socially}, the reward function  is a bit simpler, and here they do not handle multi-agents. 
+
+The idea is to learn one policy, which is used by multiple agents, and having the social behaviors emerge from it.
+
 
 \method{2017 - Socially aware motion planning with deep reinforcement learning}
 
 \rev{add to table}
 
-\cite{chen2017socially} Reinforcement learning, social force model \rev{smells like salami with \cite{chen2017decentralized}}
-
 \textbf{Name: SA-CADRL}
 
-\cite{chen2017socially} proposes a motion planning using \gls{drl} which focus on what \textbf{not to do} instead of trying to learn all possible socially acceptable rules.
+\cite{chen2017socially} (a bit similar to \cite{chen2017decentralized}) proposes a motion planning using \gls{drl} which focus on what \textbf{not to do} instead of trying to learn all possible socially acceptable rules.
+%
+The approach also handles cases with multiple agents using a ?symetrical \gls{nn}?.
+%
+The idea behind this is that each agent has a simple collision avoidance mechanism from which social patterns emerge.
+%
+This is called reciprocity, and is mathematically captured as both agents having the same policy ($\pi = \tilde{\pi}$).
+
+Some social norms (like passing through the right) is motivated through reward manipulation in the loss \rev{kind of cheating}
+
+To handle multiple agents, they make a fully connected \gls{nn} with maxpooling layers, so the number of agents is hard-encoded in the network.
+
+The approach is tested on a real robot.
+
 
 \method{2018 - Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning}
 
