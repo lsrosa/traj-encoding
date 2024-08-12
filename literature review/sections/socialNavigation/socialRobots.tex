@@ -2,49 +2,46 @@
 
 \method{2014 - Inverse Reinforcement Learning algorithms and features for robot navigation in crowds: An experimental comparison}
 
-\cite{vasquez2014inverse} inverse reinforcement learning, demonstrations?
+\cite{vasquez2014inverse} Learning from demonstrations, they define a good number of hard-coded features, like social force ones.
+
+\rev{no encoding, out-of-scope}
 
 \method{2016 - Learning socially normative robot navigation behaviors with bayesian inverse reinforcement learning}
 
-\cite{okal2016learning} inverse reinforcement learning, demonstrations ?
+\cite{okal2016learning} Learns behaviors from demonstrations using a control graph-structured representation.
 
-\method{2016 - Learning Social Etiquette: Human Trajectory Understanding In Crowded Scenes}
-
-\cite{robicquet2016learning} provide a benchmark for social navigation with interactions between pedestrians, skaters, bikers, and small vehicles. 
-%
-The benchmark contain images (videos) of these interactions in a campus.
-
-A feature called social sensitivity is proposed, which incorporates a distance which the target prefers for avoiding collision and another in which the targets starts to deviate from its trajectory to avoid collision.
-%
-These parameters are learned with an energy-like minimization.
-%
-When plotting these parameters, clusters emerge with different navigation styles.
-
-\textbf{Notes:} No encoding here. 
+\rev{no encoding, out-of-scope} 
 
 \method{2016 - Socially compliant mobile robot navigation via inverse reinforcement learning}
 
-\cite{kretzschmar2016socially} inverse reinforcement learning, demonstrations
+\cite{kretzschmar2016socially} use a Hamiltonian Markov chain Monte Carlo sampling for learning trajectories from demonstrations or pedestrians.
+%
+The map is a parsed into a Voronoi-based graph for improving efficiency.
+
+\rev{no encoding, out-of-scope}
 
 \method{2017 - DESIRE: Distant Future Prediction in Dynamic Scenes With Interacting Agents}
 
+\rev{add to table}
+
 \textbf{Name: DESIRE}
 
-\cite{lee2017desire}
+\cite{lee2017desire} proposes a deep stochastic inverse optimal controller \gls{rnn} encoder-decoder for multiple agents considering multi-modal predictions, which uses the past trajectories and the scene for making prediction.
+
+The model first encodes trajectories with \glspl{rnn}, and then creates predictions with a \gls{cvae} before being decoded by another \gls{rnn}. 
+%
+Then a \gls{rnn}-based refinement module, which also uses a \gls{cnn} feature scene extractor is used for refining the score of the generated trajectories.
 
 
 \method{2017 - Decentralized non-communicating multiagent collision avoidance with deep reinforcement learning}
-
-\rev{add to table}
 
 \cite{chen2017decentralized} A little bit similar with \cite{chen2017socially}, the reward function  is a bit simpler, and here they do not handle multi-agents. 
 
 The idea is to learn one policy, which is used by multiple agents, and having the social behaviors emerge from it.
 
+\rev{no encoding, out-of-scope}
 
 \method{2017 - Socially aware motion planning with deep reinforcement learning}
-
-\rev{add to table}
 
 \textbf{Name: SA-CADRL}
 
@@ -62,6 +59,7 @@ To handle multiple agents, they make a fully connected \gls{nn} with maxpooling 
 
 The approach is tested on a real robot.
 
+\rev{no encoding, out-of-scope}
 
 \method{2018 - Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning}
 
