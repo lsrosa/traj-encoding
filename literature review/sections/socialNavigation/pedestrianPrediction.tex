@@ -26,6 +26,27 @@ It builds on top of \cite{fernando2018soft+}, which uses \glspl{lstm} for learni
 %
 The embedding is passed through a \gls{tsne} module for dimensionality reduction and a further clustering predicts group membership. 
 
+\method{2019 - The Trajectron: Probabilistic Multi-Agent Trajectory Modeling With Dynamic Spatiotemporal Graphs}
+
+\cite{ivanovic2019trajectron} presents the \texttt{trajectron} ...
+
+\method{2020 - Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data}
+
+\cite{salzmann2020trajectron++}  presents a graph structured recurrent model for learning trajectories considering dynamics and environment constraints (maps) by extending \cite{ivanovic2019trajectron} by adding support to multi-agents and heterogeneous data. The robot in question is an autonomous car traveling in a city.
+
+The scene is represented as a graph, with nodes representing agents (cars and ppl), and edges representing interactions.
+%
+The scene evolution is encoded by a \gls{lstm} and attention is used to balance the weights in the interactions.
+%
+Finally a \gls{cnn} is used to aggregate heterogeneous data from a map, and semantic semantic information (pedestrian crossing", "drivable area", "walkway"). 
+%
+Multi-modality is achieved through the use of \gls{cvae} \rev{but it is not very clear where it is used}.
+
+\method{2020 - Transformer networks for trajectory forecasting}
+
+\cite{giuliari2020transformer} Uses transformers to predict trajectories. Without considering social interactions, the model was able to compete with state of the art social modals like Trajectron++, showing the promise of transformers
+
+
 \method{2020 - It Is Not the Journey But the Destination: Endpoint Conditioned Trajectory Prediction}
 
 \textbf{Name: PECNet}
@@ -52,10 +73,16 @@ Sets of trajectories and destination points are embedded, and the embeddings are
 %
 Finally, the future destination encoding is used to estimate the trajectory.
 %
-\rev{the paper is quite confusing}
+\rev{the paper is quite confusing, and at least to Anna's and Julian's experiments, the results on other datasets are much worse}
 
 Tests are made with datasets of humans walking around.
 
+\method{2020 - Vectornet: Encoding hd maps and agent dynamics from vectorized representation}
+
+\cite{gao2020vectornet} In this representation, agent trajectories and scene elements (walls, lane markers, etc.) are all represented as vectors in polylines (with class anotations). The use a lower level gnn to encode the polylines, and then a higher level gnn to encode the interaction between those polylines. 
+
+
+\method{2020 - A Generative Approach for Socially Compliant Navigation}
 \method{2021 - Human Trajectory Forecasting in Crowds: A Deep Learning Perspective}
 
 \textbf{Name: DirectContact, TrajNet++}
@@ -78,6 +105,11 @@ The attention is a standard attention which gives weights for the features.
 The \gls{lstm} are also standard, and their output is concatenated with velocity information.
 
 tested on datasets with ppl walking around.
+\method{2021 - FloMo: Tractable Motion Prediction with Normalizing Flows}
+
+\cite{scholler2021flomo} This work uses normalizing flows to make predictions, as well as gnn based encoding of surrounding agents.
+
+\method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
 
 \cite{kothari2021human} presents a review on deep learning for human trajectory prediction, presents two methods for capturing social interaction and present TrajNet++, a benchmark for evaluating trajectory predictions. \rev{quite a lot of things in one paper}
 
@@ -95,9 +127,28 @@ For grid-less method, they propose the \gls{lrp} which traces back which traject
 
 \rev{This paper should also appear on the survey sections since it has a really good and complete literature review and comparison.}
 
+\method{2021 - AgentFormer: Agent-Aware Transformers for
+Socio-Temporal Multi-Agent Forecasting}
+
+\cite{yuan2021agentformer} First model proposing the use of transformers to learn the joint future trajectories of all agents involved in a scene. Uses only the agents positions and velocities as input (plus a timestep encoding based on sin/cos function with varying wavelengths). 
+
+
 \method{2022 - Social-PatteRNN: Socially-Aware Trajectory Prediction Guided by Motion Patterns}
 
 \cite{navarro2022social}
+
+\method{2022 - Stochastic trajectory prediction via motion indeterminacy diffusion}
+
+\cite{gu2022stochastic} This paper uses Denoising Diffusion process for predictiong trajectories, using a transformer based decoder to predict the respective added noise at each step, while using Trajectron++ to encode the past observations. Consequently, this work provides no new encoding method.
+
+\method{2022 - Multipath++: Efficient information fusion and trajectory aggregation for behavior prediction} 
+
+\cite{varadarajan2022multipath} In this paper, the authors propose replacing the attention mechanisms with something called \textit{multi-context gating}, which basically updates multiple inputs with a shared context vector.
+
+\method{2022 - Motion transformer with global intention localization and local movement refinement}
+
+\cite{shi2022motion} This is a transformer based model. Here, this model uses a polyline based map representation \cite{gao2020vectornet}, but instead of using an inner gnn, they use a combination of mlp and max pooling, and instead of the outer gnn, a transformer is used. While the transformer does return encodings for each agent, the input positions are normalized around a single agent, which therefore becomes the target of the prediction
+
 
 \method{2023 - CSR: Cascade Conditional Variational Auto Encoder with Socially-aware Regression for Pedestrian Trajectory Prediction}
 
@@ -106,3 +157,52 @@ For grid-less method, they propose the \gls{lrp} which traces back which traject
 \method{2023 - MRGTraj: A Novel Non-Autoregressive Approach for Human Trajectory Prediction}
 
 \cite{peng2023mrgtraj}
+
+\method{2023 - Gatraj: A graph-and attention-based multi-agent trajectory prediction model}
+
+\cite{cheng2023gatraj} This model applies first an 1D CNN over the time-axis of the recorded data. Then, it applies a 2-layer MLP over the position axis, and then applies 3 layers of self attention accross all agents along the combined agent-time axes, and then lstm along the time axes. Afterwards, a recurrent graph neural network is applied on those encoded agents trajectories. 
+
+During training, the prediction loss is only applied to the best predicted trajectory ('Winner-takes-all', which is said to be more resilient against mode collaps)
+
+\method{2023 - EWareNet: Emotion-Aware Pedestrian Intent Prediction and Adaptive Spatial Profile Fusion for Social Robot Navigation}
+
+\cite{narayanan2023ewarenet}
+
+\method{2023 - ForceFormer: exploring social force and transformer for pedestrian trajectory prediction} 
+
+\cite{zhang2023forceformer} This is model based on AgentFormer \cite{yuan2021agentformer}, expanding it by not only providing positions and velocities, but expands it with an estimated goal of the agent, as well as a repulsive force part. This combination has comparable accuracy, but is able to lower collision rates.
+
+\method{2023 - Wayformer: Motion forecasting via simple \& efficient attention networks}
+
+\cite{nayakanti2023wayformer} In this work, they use transformers on the concatenated data of the agent, its surrounding agents as well as further context information to get improved results. Additionally, they use a reduced dimension latent key query in the first attention layer to allow for faster training/inference
+
+\method{2023 - Adapt: Efficient multi-agent trajectory prediction with adaptation}
+
+\cite{aydemir2023adapt}
+
+\method{2023 - Trajectory unified transformer for pedestrian trajectory prediction}
+
+\cite{shi2023trajectory}
+
+\method{2024 - TrajFlow: Learning Distributions over Trajectories for Human Behavior Prediction}
+
+\cite{meszaros2024trajflow} Based on \cite{scholler2021flomo}, it adds an RNN autoencoder to give the model better accuracy and greater flexibility.
+
+\method{2024 - MapFlow: Multi-Agent Pedestrian Trajectory Prediction Using Normalizing Flow}
+
+\cite{stefani2024mapflow} This is seemingly more or less the same as TrajFlow \cite{meszaros2024trajflow}, except written much worse and a method for context encoding which is highly unclear.
+
+
+\method{2024 - Hpnet: Dynamic trajectory forecasting with historical prediction attention}
+
+\cite{tang2024hpnet} 
+
+
+\method{2024 - Real-Time Motion Prediction via Heterogeneous Polyline Transformer with Relative Pose Encoding}
+
+\cite{zhang2024real} In this work, the authors use a polyline representation similar to \cite{gao2020vectornet}. However, compared to the approach they split each polyline into two parts: A beginning state (position and orientation), and the a self normalized vector representation of the polyline (i.e., those polyines start at the origin with angle 0). One then uses the lower level GNN to encode those polylines. One then extracts the $k$-closests polylines (i.e, their concatenated state and ecnoded polyline) around the target agent to predict, which are then filtered pushed through four levels of transformers. The beginiing states of those polylines are represented in a coordinate system that is normalized around the target agent
+
+
+\method{2024 - MTR++: Multi-Agent Motion Prediction With Symmetric Scene Modeling and Guided Intention Querying}
+
+\cite{shi2024mtr} This is an improvement upon a previous work \cite{shi2022motion}, which removes the agent centric approach and therefore allows for the prediction of all agents simultaneously. However, the encoder part stays unchanged.
