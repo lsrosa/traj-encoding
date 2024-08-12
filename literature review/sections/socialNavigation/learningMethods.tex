@@ -165,11 +165,15 @@ During training, the prediction loss is only applied to the best predicted traje
 
 \method{2023 - Adapt: Efficient multi-agent trajectory prediction with adaptation}
 
-\cite{aydemir2023adapt}
+\cite{aydemir2023adapt} Uses polyline representation based on \cite{gao2020vectornet} for environment. They use the same inner gnn, but instead of the outer gnn, they use the appraoch proposed by LaneCGN [\textbf{TODO: fill in}]. Given the for types of connections (lane to lane, lane to agent, agent to lane, agent to agent), instead of putting each type through a number of attention layeres, here, each type is put through one attention layer, before the process is repeated n times. Compared to the previous LaneCGN, they also uses multi-head attention blocks (i.e., standard transformers) instead of simpler multi-head attention.
 
 \method{2023 - Trajectory unified transformer for pedestrian trajectory prediction}
 
 \cite{shi2023trajectory}
+
+\method{2023 - Eigentrajectory: Low-rank descriptors for multi-modal trajectory forecasting}
+
+\cite{bae2023eigentrajectory}
 
 \method{2024 - TrajFlow: Learning Distributions over Trajectories for Human Behavior Prediction}
 
