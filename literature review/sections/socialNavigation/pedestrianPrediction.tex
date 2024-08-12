@@ -30,6 +30,22 @@ The embedding is passed through a \gls{tsne} module for dimensionality reduction
 
 \textbf{Name: PECNet}
 
+\method{2019 - The Trajectron: Probabilistic Multi-Agent Trajectory Modeling With Dynamic Spatiotemporal Graphs}
+
+\rev{add to table}
+
+\cite{ivanovic2019trajectron} presents the \texttt{trajectron}, a graph-structured model for predicting many (multi-modal) trajectories of multiple agents simultaneously (NxN).
+
+They say their model is the first one to use graph representation, which has advantages over \glspl{rnn} since graphs naturally accept an arbitrary number of inputs \rev{as many agents as you want}, provide an intermediate representation and encourage model reuse.
+
+First, past trajectories are encoded with \glspl{lstm}, which is then passed together with the \gls{lstm}-based ``edge-encoders'' for computing the influence of neighboring nodes and an additive attention module. 
+%
+The encoded values are passed to a \gls{cvae} and the decoder is also \gls{lstm}-based with a \gls{gmm} output which is sampled for generating multiple possible trajectories (achieving multi-modality).
+
+They also propose a \gls{kde}-based evaluation metric, which is a bit more fair since multi-modal methods in the literature were generating thousands of trajectories and counting as a success if one of those hit the target.
+
+Tested on datasets of ppl walking around.
+
 \cite{mangalam2020not} focus on learning long-range multi-modal trajectory prediction, they propose a social-pooling layer which allows for improving the diversity of the predicted social-compliant trajectories.
 
 Sets of trajectories and destination points are embedded, and the embeddings are uses by a \gls{vae} for computing predicted destination encoding, which is then passed to the social pooling for estimating which is the probable future destination.

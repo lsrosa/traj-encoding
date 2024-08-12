@@ -65,19 +65,35 @@ The approach is tested on a real robot.
 
 \method{2018 - Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning}
 
-\cite{everett2018motion} Reinforcement learning, social force model
+\rev{add to table}
+
+\textbf{Name: GA3C-CADRL}
+
+\cite{everett2018motion} propose a \gls{drl} framework for robots interacting and cooperating with humans walking around.
+%
+They propose an \gls{lstm} based approach which can observe an arbitrary number of agents (1xN)
+
+The policy observes the distance of the agent w.r.t. to the goal and other agents, and learns an \gls{a3c} policy which computes actions for collision avoidance.
+%
+The trajectory of the distance from agents is encoded with an \gls{lstm}, which is then passed to the \gls{a3c} policy.
+
+Tested with simulations and also with real robot.
 
 \method{2018 - Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning}
 
-\cite{long2018towards} Reinforcement learning, social force model
-
-\method{2019 - The Trajectron: Probabilistic Multi-Agent Trajectory Modeling With Dynamic Spatiotemporal Graphs}
-
-\cite{ivanovic2019trajectron} presents the \texttt{trajectron} ...
+\cite{long2018towards} proposes learning a policy for decentralized collision avoidance.
+%
+The policy is trained in a multi-agent \rev{simulation?} using policy gradient and \gls{rl}.
+%
+The policy gets velocities and sensor data, which are passed to a \gls{cnn} for computing actions.
+%
+Tested in simulation.
+%
+\rev{not really using encoding, out-of-scope}
 
 \method{2020 - Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data}
 
-\cite{salzmann2020trajectron++}  presents a graph structured recurrent model for learning trajectories considering dynamics and environment constraints (maps) by extending \cite{ivanovic2019trajectron} by adding support to multi-agents and heterogeneous data. The robot in question is an autonomous car traveling in a city.
+\cite{salzmann2020trajectron++}  presents a graph structured recurrent model for learning trajectories considering dynamics and environment constraints (maps) by extending \cite{ivanovic2019trajectron} by adding support to multi-agents and heterogeneous data. The robot in question is an autonomous car traveling in a city. \rev{\cite{ivanovic2019trajectron} already handles multiple agents} 
 
 The scene is represented as a graph, with nodes representing agents (cars and ppl), and edges representing interactions.
 %
