@@ -83,6 +83,14 @@ Tests are made with datasets of humans walking around.
 
 
 \method{2020 - A Generative Approach for Socially Compliant Navigation}
+
+
+\method{2020 - Learning lane graph representations for motion forecasting}
+ 
+\cite{liang2020learning} In LaneCGN, in a first step, one uses 1D-CNN to encode the the agent trajectories along the time domain. Meanwhile, the environment is encoded using polylines respresenting lane segment (who are related to other lane segment by their positions, e.g., predecessor and successor along the same lane), who are represented as the average position of their start and end node as well as the distance between them that feed through separate MLPs and then added together as the representation of the lane segment. They then use a adjusted GNN, whose result are based on the addition of four different adjacency matrices, (based on the different relationships), which can be set to certain powers to look into the future.
+
+Having encoded the agents and the lane node, attention (an MLP based on node position (average position for lanes, last position for agents) is used to go through the different connection of L-L, A-L, L-A, and A-A, 
+
 \method{2021 - Human Trajectory Forecasting in Crowds: A Deep Learning Perspective}
 
 \textbf{Name: DirectContact, TrajNet++}
@@ -178,15 +186,15 @@ During training, the prediction loss is only applied to the best predicted traje
 
 \method{2023 - Adapt: Efficient multi-agent trajectory prediction with adaptation}
 
-\cite{aydemir2023adapt} Uses polyline representation based on \cite{gao2020vectornet} for environment. They use the same inner gnn, but instead of the outer gnn, they use the appraoch proposed by LaneCGN [\textbf{TODO: fill in}]. Given the for types of connections (lane to lane, lane to agent, agent to lane, agent to agent), instead of putting each type through a number of attention layeres, here, each type is put through one attention layer, before the process is repeated n times. Compared to the previous LaneCGN, they also uses multi-head attention blocks (i.e., standard transformers) instead of simpler multi-head attention.
+\cite{aydemir2023adapt} Uses polyline representation based on \cite{gao2020vectornet} for environment. They use the same inner gnn, but instead of the outer gnn, they use the appraoch proposed by LaneCGN \cite{liang2020learning}. Given the for types of connections (lane to lane, lane to agent, agent to lane, agent to agent), instead of putting each type through a number of attention layeres, here, each type is put through one attention layer, before the process is repeated n times. Compared to the previous LaneCGN, they also uses multi-head attention blocks (i.e., standard transformers) instead of simpler multi-head attention.
 
 \method{2023 - Trajectory unified transformer for pedestrian trajectory prediction}
 
-\cite{shi2023trajectory}
+\cite{shi2023trajectory} The have the approach of clustering the future trajecotries in the dataset, and then emebedding each cluster and adding that to the embiddings of the past trajectories to create a multimodal predictions. Thos are then feed through a transformer.
 
-\method{2023 - Eigentrajectory: Low-rank descriptors for multi-modal trajectory forecasting}
+\method{2023 - Eigentrajectory: Low-rank descriptors for multi-modal trajectory forecasting} 
 
-\cite{bae2023eigentrajectory}
+\cite{bae2023eigentrajectory} Thez extract prinicipal components from the dataset for past and future trajectories, and project the recorded trajectories onto them. This is can then be used as a pre- and post-processing (inverse PCA for the latter) for any arbitrary prediction model, increasing the performance in two test cases.
 
 \method{2024 - TrajFlow: Learning Distributions over Trajectories for Human Behavior Prediction}
 
