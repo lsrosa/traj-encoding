@@ -81,10 +81,6 @@ Tests are made with datasets of humans walking around.
 
 \cite{gao2020vectornet} In this representation, agent trajectories and scene elements (walls, lane markers, etc.) are all represented as vectors in polylines (with class anotations). The use a lower level gnn to encode the polylines, and then a higher level gnn to encode the interaction between those polylines. 
 
-
-\method{2020 - A Generative Approach for Socially Compliant Navigation}
-
-
 \method{2020 - Learning lane graph representations for motion forecasting}
  
 \cite{liang2020learning} In LaneCGN, in a first step, one uses 1D-CNN to encode the the agent trajectories along the time domain. Meanwhile, the environment is encoded using polylines respresenting lane segment (who are related to other lane segment by their positions, e.g., predecessor and successor along the same lane), who are represented as the average position of their start and end node as well as the distance between them that feed through separate MLPs and then added together as the representation of the lane segment. They then use a adjusted GNN, whose result are based on the addition of four different adjacency matrices, (based on the different relationships), which can be set to certain powers to look into the future.
@@ -94,6 +90,22 @@ Having encoded the agents and the lane node, attention (an MLP based on node pos
 \method{2021 - Human Trajectory Forecasting in Crowds: A Deep Learning Perspective}
 
 \textbf{Name: DirectContact, TrajNet++}
+
+\cite{kothari2021human} presents a review on deep learning for human trajectory prediction, presents two methods for capturing social interaction and present TrajNet++, a benchmark for evaluating trajectory predictions. \rev{quite a lot of things in one paper}
+
+They focus on short-term trajectory prediction (5 sec), since the long term objective cannot be observed.
+%
+They focus on the interactions of trajectory predictors, not on the predictor (\gls{lstm}) itself.
+%
+Specifically, to handle a variable number of neighbors and how they collective influence one's trajectory.
+
+A pipeline is composed of an encoder, followed by a social model, and then a decoder.
+%
+Social model are classified in grid-based and non-grid-based, they propose a grid based method, using the velocities as observations, as it is natural for learning collision avoidance and leader-follower relations.
+%
+For grid-less method, they propose the \gls{lrp} which traces back which trajectories generate the prediction, and hence improving explainability.
+
+\rev{This paper should also appear on the survey sections since it has a really good and complete literature review and comparison.}
 
 
 \method{2021 - Tra2Tra: Trajectory-to-Trajectory Prediction With a Global Social Spatial-Temporal Attentive Neural Network}
@@ -117,26 +129,7 @@ tested on datasets with ppl walking around.
 
 \cite{scholler2021flomo} This work uses normalizing flows to make predictions, as well as gnn based encoding of surrounding agents.
 
-\method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
-
-\cite{kothari2021human} presents a review on deep learning for human trajectory prediction, presents two methods for capturing social interaction and present TrajNet++, a benchmark for evaluating trajectory predictions. \rev{quite a lot of things in one paper}
-
-They focus on short-term trajectory prediction (5 sec), since the long term objective cannot be observed.
-%
-They focus on the interactions of trajectory predictors, not on the predictor (\gls{lstm}) itself.
-%
-Specifically, to handle a variable number of neighbors and how they collective influence one's trajectory.
-
-A pipeline is composed of an encoder, followed by a social model, and then a decoder.
-%
-Social model are classified in grid-based and non-grid-based, they propose a grid based method, using the velocities as observations, as it is natural for learning collision avoidance and leader-follower relations.
-%
-For grid-less method, they propose the \gls{lrp} which traces back which trajectories generate the prediction, and hence improving explainability.
-
-\rev{This paper should also appear on the survey sections since it has a really good and complete literature review and comparison.}
-
-\method{2021 - AgentFormer: Agent-Aware Transformers for
-Socio-Temporal Multi-Agent Forecasting}
+\method{2021 - AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting}
 
 \cite{yuan2021agentformer} First model proposing the use of transformers to learn the joint future trajectories of all agents involved in a scene. Uses only the agents positions and velocities as input (plus a timestep encoding based on sin/cos function with varying wavelengths). 
 
