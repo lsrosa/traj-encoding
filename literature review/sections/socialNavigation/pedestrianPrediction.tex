@@ -46,11 +46,6 @@ Multi-modality is achieved through the use of \gls{cvae} \rev{but it is not very
 
 \cite{giuliari2020transformer} Uses transformers to predict trajectories. Without considering social interactions, the model was able to compete with state of the art social modals like Trajectron++, showing the promise of transformers
 
-
-\method{2020 - It Is Not the Journey But the Destination: Endpoint Conditioned Trajectory Prediction}
-
-\textbf{Name: PECNet}
-
 \method{2019 - The Trajectron: Probabilistic Multi-Agent Trajectory Modeling With Dynamic Spatiotemporal Graphs}
 
 \rev{add to table}
@@ -67,9 +62,14 @@ They also propose a \gls{kde}-based evaluation metric, which is a bit more fair 
 
 Tested on datasets of ppl walking around.
 
-\cite{mangalam2020not} focus on learning long-range multi-modal trajectory prediction, they propose a social-pooling layer which allows for improving the diversity of the predicted social-compliant trajectories.
 
-Sets of trajectories and destination points are embedded, and the embeddings are uses by a \gls{vae} for computing predicted destination encoding, which is then passed to the social pooling for estimating which is the probable future destination.
+\method{2020 - It Is Not the Journey But the Destination: Endpoint Conditioned Trajectory Prediction}
+
+\textbf{Name: PECNet}
+
+\cite{mangalam2020not} focus on learning long-range multi-modal trajectory prediction. They propose a social-pooling layer which allows for improving the diversity of the predicted social-compliant trajectories.
+
+Sets of trajectories and destination points are embedded, and the embeddings are used by a \gls{vae} for computing predicted destination encoding, which is then passed to the social pooling for estimating which is the probable future destination.
 %
 Finally, the future destination encoding is used to estimate the trajectory.
 %
@@ -152,6 +152,11 @@ Socio-Temporal Multi-Agent Forecasting}
 \method{2022 - Multipath++: Efficient information fusion and trajectory aggregation for behavior prediction} 
 
 \cite{varadarajan2022multipath} In this paper, the authors propose replacing the attention mechanisms with something called \textit{multi-context gating}, which basically updates multiple inputs with a shared context vector.
+
+\method{2022 - Socialvae: Human trajectory prediction using timewise latents}
+
+\cite{xu2022socialvae}
+
 
 \method{2022 - Motion transformer with global intention localization and local movement refinement}
 
