@@ -38,8 +38,24 @@ The pooling mechanism is what handles multiple people.
 
 \method{2018 - 3DOF Pedestrian Trajectory Prediction Learned from Long-Term Autonomous Mobile Robot Deployment Data}
 
-\cite{sun20183dof}
+\rev{add to table}
+
+\textbf{Name: T-Pose-LSTM}
+
+\cite{sun20183dof} propose learning 3\glspl{dof} (planar position and orientation) trajectories from lidar data.
+%
+The approach computes an embedding for the observations which are passed to a 3 layer stacked \gls{lstm}, the stacks prevent short-memory from vanishing quickly.
+
+\rev{not sure if this goes to social robots or human trajectory prediction}
 
 \method{2020 - CNN, Segmentation or Semantic Embeddings: Evaluating Scene Context for Trajectory Prediction}
 
-\cite{syed2020cnn}
+\rev{add to table?}
+
+\textbf{Name: RAE-PSPNet-emb}
+
+\cite{syed2020cnn} evaluates the use of scene embeddings, social embeddings, and scene segmentation when learning to predict pedestrian trajectories using \glspl{lstm}.
+%
+Results indicate that using scene segmentation may be useful.
+%
+\rev{however it is not clear what they call their approach and the other ones used in comparison. Hard to really conclude anything from the paper.}
