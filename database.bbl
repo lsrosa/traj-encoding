@@ -1,0 +1,1670 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{100}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Ahmed et~al\mbox{.}(2023)]%
+        {ahmed2022deep}
+\bibfield{author}{\bibinfo{person}{Usman Ahmed}, \bibinfo{person}{Jerry
+  Chun-Wei Lin}, {and} \bibinfo{person}{Gautam Srivastava}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Deep Fuzzy Contrast-Set Deviation Point
+  Representation and Trajectory Detection}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Fuzzy Systems}}
+  \bibinfo{volume}{31}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{571--581}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TFUZZ.2022.3197876}
+\showDOI{\tempurl}
+
+
+\bibitem[Alahi et~al\mbox{.}(2016)]%
+        {alahi2016social}
+\bibfield{author}{\bibinfo{person}{Alexandre Alahi}, \bibinfo{person}{Kratarth
+  Goel}, \bibinfo{person}{Vignesh Ramanathan}, \bibinfo{person}{Alexandre
+  Robicquet}, \bibinfo{person}{Li Fei-Fei}, {and} \bibinfo{person}{Silvio
+  Savarese}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Social LSTM: Human Trajectory Prediction in
+  Crowded Spaces}}. In \bibinfo{booktitle}{\emph{{Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition (CVPR)}}}.
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{961--971}.
+\newblock
+\showISSN{1063-6919}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2016.110}
+\showDOI{\tempurl}
+
+
+\bibitem[Aydemir et~al\mbox{.}(2023)]%
+        {aydemir2023adapt}
+\bibfield{author}{\bibinfo{person}{G{\"o}rkay Aydemir},
+  \bibinfo{person}{Adil~Kaan Akan}, {and} \bibinfo{person}{Fatma G{\"u}ney}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Adapt: Efficient multi-agent trajectory prediction
+  with adaptation}}. In \bibinfo{booktitle}{\emph{{Proceedings of the IEEE/CVF
+  International Conference on Computer Vision}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{8295--8305}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV51070.2023.00762}
+\showDOI{\tempurl}
+
+
+\bibitem[Bae et~al\mbox{.}(2023)]%
+        {bae2023eigentrajectory}
+\bibfield{author}{\bibinfo{person}{Inhwan Bae}, \bibinfo{person}{Jean Oh},
+  {and} \bibinfo{person}{Hae-Gon Jeon}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Eigentrajectory: Low-rank descriptors for
+  multi-modal trajectory forecasting}}. In
+  \bibinfo{booktitle}{\emph{{Proceedings of the IEEE/CVF International
+  Conference on Computer Vision}}} (Paris, France). \bibinfo{publisher}{IEEE
+  Computer Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{10017--10029}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV51070.2023.00919}
+\showDOI{\tempurl}
+
+
+\bibitem[Belogay et~al\mbox{.}(1997)]%
+        {belogay1997calculating}
+\bibfield{author}{\bibinfo{person}{E Belogay}, \bibinfo{person}{C Cabrelli},
+  \bibinfo{person}{U Molter}, {and} \bibinfo{person}{R Shonkwiler}.}
+  \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{{Calculating the Hausdorff distance between
+  curves}}.
+\newblock \bibinfo{journal}{\emph{Inform. Process. Lett.}}
+  \bibinfo{volume}{64}, \bibinfo{number}{1} (\bibinfo{year}{1997}),
+  \bibinfo{pages}{17--22}.
+\newblock
+
+
+\bibitem[Bhujel et~al\mbox{.}(2019)]%
+        {bhujel2019pedestrian}
+\bibfield{author}{\bibinfo{person}{Niraj Bhujel}, \bibinfo{person}{Eam~Khwang
+  Teoh}, {and} \bibinfo{person}{Wei-Yun Yau}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Pedestrian Trajectory Prediction Using RNN
+  Encoder-Decoder with Spatio-Temporal Attentions}}. In
+  \bibinfo{booktitle}{\emph{{2019 IEEE 5th International Conference on
+  Mechatronics System and Robots (ICMSR)}}} (Singapore).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{110--114}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICMSR.2019.8835478}
+\showDOI{\tempurl}
+
+
+\bibitem[Bobu et~al\mbox{.}(2023)]%
+        {bobu2023sirl}
+\bibfield{author}{\bibinfo{person}{Andreea Bobu}, \bibinfo{person}{Yi Liu},
+  \bibinfo{person}{Rohin Shah}, \bibinfo{person}{Daniel~S. Brown}, {and}
+  \bibinfo{person}{Anca~D. Dragan}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{SIRL: Similarity-Based Implicit Representation
+  Learning}}. In \bibinfo{booktitle}{\emph{{Proceedings of the 2023 ACM/IEEE
+  International Conference on Human-Robot Interaction}}} (Stockholm, Sweden)
+  \emph{(\bibinfo{series}{HRI '23})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{565–574}.
+\newblock
+\showISBNx{9781450399647}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3568162.3576989}
+\showDOI{\tempurl}
+
+
+\bibitem[Chang et~al\mbox{.}(2023)]%
+        {chang2023contrastive}
+\bibfield{author}{\bibinfo{person}{Yanchuan Chang}, \bibinfo{person}{Jianzhong
+  Qi}, \bibinfo{person}{Yuxuan Liang}, {and} \bibinfo{person}{Egemen Tanin}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Contrastive Trajectory Similarity Learning with
+  Dual-Feature Attention}}. In \bibinfo{booktitle}{\emph{{2023 IEEE 39th
+  International Conference on Data Engineering (ICDE)}}} (Anaheim, CA, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2933--2945}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE55515.2023.00224}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen and Ng(2004)]%
+        {chen2004marriage}
+\bibfield{author}{\bibinfo{person}{Lei Chen} {and} \bibinfo{person}{Raymond
+  Ng}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{{On the marriage of lp-norms and edit distance}}.
+  In \bibinfo{booktitle}{\emph{{Proceedings of the Thirtieth international
+  conference on Very large data bases-Volume 30}}} (Toronto, Canada)
+  \emph{(\bibinfo{series}{VLDB '04})}. \bibinfo{publisher}{VLDB Endowment},
+  \bibinfo{pages}{792--803}.
+\newblock
+
+
+\bibitem[Chen et~al\mbox{.}(2005)]%
+        {chen2005robust}
+\bibfield{author}{\bibinfo{person}{Lei Chen}, \bibinfo{person}{M.~Tamer
+  \"{O}zsu}, {and} \bibinfo{person}{Vincent Oria}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{{Robust and fast similarity search for moving
+  object trajectories}}. In \bibinfo{booktitle}{\emph{{Proceedings of the 2005
+  ACM SIGMOD International Conference on Management of Data}}} (Baltimore,
+  Maryland) \emph{(\bibinfo{series}{SIGMOD '05})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{491–502}.
+\newblock
+\showISBNx{1595930604}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1066157.1066213}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2022b)]%
+        {chen2021embedding}
+\bibfield{author}{\bibinfo{person}{Yuanyi Chen}, \bibinfo{person}{Peng Yu},
+  \bibinfo{person}{Wenwang Chen}, \bibinfo{person}{Zengwei Zheng}, {and}
+  \bibinfo{person}{Minyi Guo}.} \bibinfo{year}{2022}\natexlab{b}.
+\newblock \showarticletitle{{Embedding-Based Similarity Computation for Massive
+  Vehicle Trajectory Data}}.
+\newblock \bibinfo{journal}{\emph{IEEE Internet of Things Journal}}
+  \bibinfo{volume}{9}, \bibinfo{number}{6} (\bibinfo{year}{2022}),
+  \bibinfo{pages}{4650--4660}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/JIOT.2021.3107327}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2017a)]%
+        {chen2017socially}
+\bibfield{author}{\bibinfo{person}{Yu~Fan Chen}, \bibinfo{person}{Michael
+  Everett}, \bibinfo{person}{Miao Liu}, {and} \bibinfo{person}{Jonathan~P.
+  How}.} \bibinfo{year}{2017}\natexlab{a}.
+\newblock \showarticletitle{Socially aware motion planning with deep
+  reinforcement learning}. In \bibinfo{booktitle}{\emph{2017 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems (IROS)}}.
+  \bibinfo{pages}{1343--1350}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IROS.2017.8202312}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2017b)]%
+        {chen2017decentralized}
+\bibfield{author}{\bibinfo{person}{Yu~Fan Chen}, \bibinfo{person}{Miao Liu},
+  \bibinfo{person}{Michael Everett}, {and} \bibinfo{person}{Jonathan~P. How}.}
+  \bibinfo{year}{2017}\natexlab{b}.
+\newblock \showarticletitle{Decentralized non-communicating multiagent
+  collision avoidance with deep reinforcement learning}. In
+  \bibinfo{booktitle}{\emph{2017 IEEE International Conference on Robotics and
+  Automation (ICRA)}}. \bibinfo{pages}{285--292}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA.2017.7989037}
+\showDOI{\tempurl}
+
+
+\bibitem[Chen et~al\mbox{.}(2022a)]%
+        {chen2022towards}
+\bibfield{author}{\bibinfo{person}{Ziwen Chen}, \bibinfo{person}{Ke Li},
+  \bibinfo{person}{Silin Zhou}, \bibinfo{person}{Lisi Chen}, {and}
+  \bibinfo{person}{Shuo Shang}.} \bibinfo{year}{2022}\natexlab{a}.
+\newblock \showarticletitle{Towards robust trajectory similarity computation:
+  Representation-based spatio-temporal similarity quantification}.
+\newblock \bibinfo{journal}{\emph{World Wide Web}} \bibinfo{volume}{26},
+  \bibinfo{number}{4} (\bibinfo{date}{aug} \bibinfo{year}{2022}),
+  \bibinfo{pages}{1271–1294}.
+\newblock
+\showISSN{1386-145X}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11280-022-01085-4}
+\showDOI{\tempurl}
+
+
+\bibitem[Cheng et~al\mbox{.}(2023)]%
+        {cheng2023gatraj}
+\bibfield{author}{\bibinfo{person}{Hao Cheng}, \bibinfo{person}{Mengmeng Liu},
+  \bibinfo{person}{Lin Chen}, \bibinfo{person}{Hellward Broszio},
+  \bibinfo{person}{Monika Sester}, {and} \bibinfo{person}{Michael~Ying Yang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Gatraj: A graph-and attention-based multi-agent
+  trajectory prediction model}}.
+\newblock \bibinfo{journal}{\emph{ISPRS Journal of Photogrammetry and Remote
+  Sensing}}  \bibinfo{volume}{205} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{163--175}.
+\newblock
+
+
+\bibitem[Co-Reyes et~al\mbox{.}(2018)]%
+        {co2018self}
+\bibfield{author}{\bibinfo{person}{John Co-Reyes}, \bibinfo{person}{YuXuan
+  Liu}, \bibinfo{person}{Abhishek Gupta}, \bibinfo{person}{Benjamin Eysenbach},
+  \bibinfo{person}{Pieter Abbeel}, {and} \bibinfo{person}{Sergey Levine}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Self-Consistent Trajectory Autoencoder:
+  Hierarchical Reinforcement Learning with Trajectory Embeddings}}. In
+  \bibinfo{booktitle}{\emph{{Proceedings of the 35th International Conference
+  on Machine Learning}}} (Stockholm, Sweden)
+  \emph{(\bibinfo{series}{Proceedings of Machine Learning Research},
+  Vol.~\bibinfo{volume}{80})}, \bibfield{editor}{\bibinfo{person}{Jennifer Dy}
+  {and} \bibinfo{person}{Andreas Krause}} (Eds.).
+  \bibinfo{publisher}{International Machine Learning Society (IMLS)},
+  \bibinfo{pages}{1009--1018}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.mlr.press/v80/co-reyes18a.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Cui et~al\mbox{.}(2021)]%
+        {cui2021learning}
+\bibfield{author}{\bibinfo{person}{Yuxiang Cui}, \bibinfo{person}{Haodong
+  Zhang}, \bibinfo{person}{Yue Wang}, {and} \bibinfo{person}{Rong Xiong}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Learning World Transition Model for Socially Aware
+  Robot Navigation}}. In \bibinfo{booktitle}{\emph{{2021 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Xi'an, China).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{9262--9268}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA48506.2021.9561973}
+\showDOI{\tempurl}
+
+
+\bibitem[Da and Zhang(2022)]%
+        {da2022path}
+\bibfield{author}{\bibinfo{person}{Fang Da} {and} \bibinfo{person}{Yu Zhang}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Path-aware graph attention for hd maps in motion
+  prediction}}. In \bibinfo{booktitle}{\emph{{2022 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Philadelphia, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{6430--6436}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA46639.2022.9812100}
+\showDOI{\tempurl}
+
+
+\bibitem[Deo and Trivedi(2018)]%
+        {deo2018convolutional}
+\bibfield{author}{\bibinfo{person}{Nachiket Deo} {and}
+  \bibinfo{person}{Mohan~M. Trivedi}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Convolutional Social Pooling for Vehicle
+  Trajectory Prediction}}. In \bibinfo{booktitle}{\emph{{Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+  Workshops}}} (Salt Lake City, UT, USA). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{1549--15498}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPRW.2018.00196}
+\showDOI{\tempurl}
+
+
+\bibitem[Ding et~al\mbox{.}(2022)]%
+        {ding2022tsne}
+\bibfield{author}{\bibinfo{person}{Jiaxin Ding}, \bibinfo{person}{Bowen Zhang},
+  \bibinfo{person}{Xinbing Wang}, {and} \bibinfo{person}{Chenghu Zhou}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{TSNE: Trajectory Similarity Network Embedding}}.
+  In \bibinfo{booktitle}{\emph{{Proceedings of the 30th International
+  Conference on Advances in Geographic Information Systems}}} (Seattle,
+  Washington) \emph{(\bibinfo{series}{SIGSPATIAL '22})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{86},
+  \bibinfo{numpages}{4}~pages.
+\newblock
+\showISBNx{9781450395298}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3557915.3561022}
+\showDOI{\tempurl}
+
+
+\bibitem[Eiter and Mannila(1994)]%
+        {eiter1994computing}
+\bibfield{author}{\bibinfo{person}{Thomas Eiter} {and} \bibinfo{person}{Heikki
+  Mannila}.} \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{{Computing discrete Fr\'echet distance}}.
+\newblock  (\bibinfo{date}{05} \bibinfo{year}{1994}).
+\newblock
+
+
+\bibitem[Everett et~al\mbox{.}(2018)]%
+        {everett2018motion}
+\bibfield{author}{\bibinfo{person}{Michael Everett}, \bibinfo{person}{Yu~Fan
+  Chen}, {and} \bibinfo{person}{Jonathan~P. How}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Motion Planning Among Dynamic, Decision-Making
+  Agents with Deep Reinforcement Learning}. In \bibinfo{booktitle}{\emph{2018
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}.
+  \bibinfo{pages}{3052--3059}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IROS.2018.8593871}
+\showDOI{\tempurl}
+
+
+\bibitem[Fang et~al\mbox{.}(2022)]%
+        {fang2022spatio}
+\bibfield{author}{\bibinfo{person}{Ziquan Fang}, \bibinfo{person}{Yuntao Du},
+  \bibinfo{person}{Xinjun Zhu}, \bibinfo{person}{Danlei Hu},
+  \bibinfo{person}{Lu Chen}, \bibinfo{person}{Yunjun Gao}, {and}
+  \bibinfo{person}{Christian~S. Jensen}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Spatio-Temporal Trajectory Similarity Learning in
+  Road Networks}}. In \bibinfo{booktitle}{\emph{{Proceedings of the 28th ACM
+  SIGKDD Conference on Knowledge Discovery and Data Mining}}} (Washington DC,
+  USA) \emph{(\bibinfo{series}{KDD '22})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{347–356}.
+\newblock
+\showISBNx{9781450393850}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3534678.3539375}
+\showDOI{\tempurl}
+
+
+\bibitem[Fernando et~al\mbox{.}(2018)]%
+        {fernando2018soft+}
+\bibfield{author}{\bibinfo{person}{Tharindu Fernando}, \bibinfo{person}{Simon
+  Denman}, \bibinfo{person}{Sridha Sridharan}, {and} \bibinfo{person}{Clinton
+  Fookes}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Soft + Hardwired attention: An LSTM framework for
+  human trajectory prediction and abnormal event detection}}.
+\newblock \bibinfo{journal}{\emph{Neural Networks}}  \bibinfo{volume}{108}
+  (\bibinfo{year}{2018}), \bibinfo{pages}{466--478}.
+\newblock
+\showISSN{0893-6080}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.neunet.2018.09.002}
+\showDOI{\tempurl}
+
+
+\bibitem[Fernando et~al\mbox{.}(2019)]%
+        {fernando2019gd}
+\bibfield{author}{\bibinfo{person}{Tharindu Fernando}, \bibinfo{person}{Simon
+  Denman}, \bibinfo{person}{Sridha Sridharan}, {and} \bibinfo{person}{Clinton
+  Fookes}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{GD-GAN: Generative Adversarial Networks for
+  Trajectory Prediction and Group Detection in Crowds}}. In
+  \bibinfo{booktitle}{\emph{{Computer Vision -- ACCV 2018}}},
+  \bibfield{editor}{\bibinfo{person}{C.~V. Jawahar}, \bibinfo{person}{Hongdong
+  Li}, \bibinfo{person}{Greg Mori}, {and} \bibinfo{person}{Konrad Schindler}}
+  (Eds.). \bibinfo{publisher}{Springer International Publishing},
+  \bibinfo{address}{Cham}, \bibinfo{pages}{314--330}.
+\newblock
+\showISBNx{978-3-030-20887-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-20887-5_20}
+\showDOI{\tempurl}
+
+
+\bibitem[Fu and Lee(2020)]%
+        {fu2020trembr}
+\bibfield{author}{\bibinfo{person}{Tao-Yang Fu} {and}
+  \bibinfo{person}{Wang-Chien Lee}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Trembr: Exploring Road Networks for Trajectory
+  Representation Learning}}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Intell. Syst. Technol.}}
+  \bibinfo{volume}{11}, \bibinfo{number}{1}, Article \bibinfo{articleno}{10}
+  (\bibinfo{date}{feb} \bibinfo{year}{2020}), \bibinfo{numpages}{25}~pages.
+\newblock
+\showISSN{2157-6904}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3361741}
+\showDOI{\tempurl}
+
+
+\bibitem[Gao et~al\mbox{.}(2020)]%
+        {gao2020vectornet}
+\bibfield{author}{\bibinfo{person}{Jiyang Gao}, \bibinfo{person}{Chen Sun},
+  \bibinfo{person}{Hang Zhao}, \bibinfo{person}{Yi Shen},
+  \bibinfo{person}{Dragomir Anguelov}, \bibinfo{person}{Congcong Li}, {and}
+  \bibinfo{person}{Cordelia Schmid}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Vectornet: Encoding hd maps and agent dynamics
+  from vectorized representation}}. In \bibinfo{booktitle}{\emph{{IEEE/CVF
+  conference on computer vision and pattern recognition}}} (Seattle, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{11525--11533}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR42600.2020.01154}
+\showDOI{\tempurl}
+
+
+\bibitem[Gao et~al\mbox{.}(2017)]%
+        {gao2017identifying}
+\bibfield{author}{\bibinfo{person}{Qiang Gao}, \bibinfo{person}{Fan Zhou},
+  \bibinfo{person}{Kunpeng Zhang}, \bibinfo{person}{Goce Trajcevski},
+  \bibinfo{person}{Xucheng Luo}, {and} \bibinfo{person}{Fengli Zhang}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{Identifying Human Mobility via Trajectory
+  Embeddings}}. In \bibinfo{booktitle}{\emph{{Proceedings of the 26th
+  International Joint Conference on Artificial Intelligence}}} (Melbourne,
+  Australia) \emph{(\bibinfo{series}{IJCAI'17})}. \bibinfo{publisher}{AAAI
+  Press}, \bibinfo{pages}{1689–1695}.
+\newblock
+\showISBNx{9780999241103}
+\urldef\tempurl%
+\url{https://doi.org/10.24963/ijcai.2017/234}
+\showDOI{\tempurl}
+
+
+\bibitem[Giuliari et~al\mbox{.}(2020)]%
+        {giuliari2020transformer}
+\bibfield{author}{\bibinfo{person}{Francesco Giuliari}, \bibinfo{person}{Irtiza
+  Hasan}, \bibinfo{person}{Marco Cristani}, {and} \bibinfo{person}{Fabio
+  Galasso}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Transformer networks for trajectory forecasting}}.
+  In \bibinfo{booktitle}{\emph{{2020 25th International conference on pattern
+  recognition (ICPR)}}} (Milan, Italy). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{10335--10342}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICPR48806.2021.9412190}
+\showDOI{\tempurl}
+
+
+\bibitem[Gu et~al\mbox{.}(2022)]%
+        {gu2022stochastic}
+\bibfield{author}{\bibinfo{person}{Tianpei Gu}, \bibinfo{person}{Guangyi Chen},
+  \bibinfo{person}{Junlong Li}, \bibinfo{person}{Chunze Lin},
+  \bibinfo{person}{Yongming Rao}, \bibinfo{person}{Jie Zhou}, {and}
+  \bibinfo{person}{Jiwen Lu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Stochastic trajectory prediction via motion
+  indeterminacy diffusion}}. In \bibinfo{booktitle}{\emph{{IEEE/CVF Conference
+  on Computer Vision and Pattern Recognition}}} (New Orleans, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{17113--17122}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52688.2022.01660}
+\showDOI{\tempurl}
+
+
+\bibitem[Gupta et~al\mbox{.}(2018)]%
+        {gupta2018social}
+\bibfield{author}{\bibinfo{person}{Agrim Gupta}, \bibinfo{person}{Justin
+  Johnson}, \bibinfo{person}{Li Fei-Fei}, \bibinfo{person}{Silvio Savarese},
+  {and} \bibinfo{person}{Alexandre Alahi}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Social GAN: Socially Acceptable Trajectories With
+  Generative Adversarial Networks}}. In \bibinfo{booktitle}{\emph{{Proceedings
+  of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}}.
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2255--2264}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2018.00240}
+\showDOI{\tempurl}
+
+
+\bibitem[Han et~al\mbox{.}(2021)]%
+        {han2021graph}
+\bibfield{author}{\bibinfo{person}{Peng Han}, \bibinfo{person}{Jin Wang},
+  \bibinfo{person}{Di Yao}, \bibinfo{person}{Shuo Shang}, {and}
+  \bibinfo{person}{Xiangliang Zhang}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{A Graph-Based Approach for Trajectory Similarity
+  Computation in Spatial Networks}}. In \bibinfo{booktitle}{\emph{{Proceedings
+  of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining}}}
+  (Virtual Event, Singapore) \emph{(\bibinfo{series}{KDD '21})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{556–564}.
+\newblock
+\showISBNx{9781450383325}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3447548.3467337}
+\showDOI{\tempurl}
+
+
+\bibitem[Helbing and Moln\'ar(1995)]%
+        {helbing1995social}
+\bibfield{author}{\bibinfo{person}{Dirk Helbing} {and} \bibinfo{person}{P\'eter
+  Moln\'ar}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Social force model for pedestrian dynamics}.
+\newblock \bibinfo{journal}{\emph{Phys. Rev. E}}  \bibinfo{volume}{51}
+  (\bibinfo{date}{May} \bibinfo{year}{1995}), \bibinfo{pages}{4282--4286}.
+\newblock
+Issue 5.
+\urldef\tempurl%
+\url{https://doi.org/10.1103/PhysRevE.51.4282}
+\showDOI{\tempurl}
+
+
+\bibitem[Hu et~al\mbox{.}(2023)]%
+        {hu2023spatio}
+\bibfield{author}{\bibinfo{person}{Danlei Hu}, \bibinfo{person}{Lu Chen},
+  \bibinfo{person}{Hanxi Fang}, \bibinfo{person}{Ziquan Fang},
+  \bibinfo{person}{Tianyi Li}, {and} \bibinfo{person}{Yunjun Gao}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{{Spatio-Temporal Trajectory Similarity Measures: A
+  Comprehensive Survey and Quantitative Study}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2303.05012}
+\showDOI{\tempurl}
+\showeprint[arxiv]{2303.05012}~[cs.DS]
+
+
+\bibitem[Huang et~al\mbox{.}(2020)]%
+        {huang2020diversitygan}
+\bibfield{author}{\bibinfo{person}{Xin Huang}, \bibinfo{person}{Stephen~G.
+  McGill}, \bibinfo{person}{Jonathan~A. DeCastro}, \bibinfo{person}{Luke
+  Fletcher}, \bibinfo{person}{John~J. Leonard}, \bibinfo{person}{Brian~C.
+  Williams}, {and} \bibinfo{person}{Guy Rosman}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{DiversityGAN: Diversity-Aware Vehicle Motion
+  Prediction via Latent Semantic Sampling}}.
+\newblock \bibinfo{journal}{\emph{IEEE Robotics and Automation Letters}}
+  \bibinfo{volume}{5}, \bibinfo{number}{4} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{5089--5096}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/LRA.2020.3005369}
+\showDOI{\tempurl}
+
+
+\bibitem[Huttenlocher et~al\mbox{.}(1993)]%
+        {huttenlocher1993comparing}
+\bibfield{author}{\bibinfo{person}{D.P. Huttenlocher}, \bibinfo{person}{G.A.
+  Klanderman}, {and} \bibinfo{person}{W.J. Rucklidge}.}
+  \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{{Comparing images using the Hausdorff distance}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Pattern Analysis and
+  Machine Intelligence}} \bibinfo{volume}{15}, \bibinfo{number}{9}
+  (\bibinfo{year}{1993}), \bibinfo{pages}{850--863}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/34.232073}
+\showDOI{\tempurl}
+
+
+\bibitem[Ivanovic and Pavone(2019)]%
+        {ivanovic2019trajectron}
+\bibfield{author}{\bibinfo{person}{B. Ivanovic} {and} \bibinfo{person}{M.
+  Pavone}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{The Trajectron: Probabilistic Multi-Agent
+  Trajectory Modeling With Dynamic Spatiotemporal Graphs}. In
+  \bibinfo{booktitle}{\emph{2019 IEEE/CVF International Conference on Computer
+  Vision (ICCV)}}. \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{2375--2384}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV.2019.00246}
+\showDOI{\tempurl}
+
+
+\bibitem[Jesorsky et~al\mbox{.}(2001)]%
+        {jesorsky2001robust}
+\bibfield{author}{\bibinfo{person}{Oliver Jesorsky}, \bibinfo{person}{Klaus~J.
+  Kirchberg}, {and} \bibinfo{person}{Robert~W. Frischholz}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{{Robust Face Detection Using the Hausdorff
+  Distance}}. In \bibinfo{booktitle}{\emph{{Audio- and Video-Based Biometric
+  Person Authentication}}}, \bibfield{editor}{\bibinfo{person}{Josef Bigun}
+  {and} \bibinfo{person}{Fabrizio Smeraldi}} (Eds.).
+  \bibinfo{publisher}{Springer Berlin Heidelberg}, \bibinfo{address}{Berlin,
+  Heidelberg}, \bibinfo{pages}{90--95}.
+\newblock
+\showISBNx{978-3-540-45344-4}
+
+
+\bibitem[Kiss et~al\mbox{.}(2021)]%
+        {kiss2021probabilistic}
+\bibfield{author}{\bibinfo{person}{Stefan~H. Kiss}, \bibinfo{person}{Kavindie
+  Katuwandeniya}, \bibinfo{person}{Alen Alempijevic}, {and}
+  \bibinfo{person}{Teresa Vidal-Calleja}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Probabilistic Dynamic Crowd Prediction for Social
+  Navigation}}. In \bibinfo{booktitle}{\emph{{2021 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Xi'an, China).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{9269--9275}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA48506.2021.9561053}
+\showDOI{\tempurl}
+
+
+\bibitem[Koppula and Saxena(2016)]%
+        {koppula2015anticipating}
+\bibfield{author}{\bibinfo{person}{Hema~S. Koppula} {and}
+  \bibinfo{person}{Ashutosh Saxena}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Anticipating Human Activities Using Object
+  Affordances for Reactive Robotic Response}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Pattern Analysis and
+  Machine Intelligence}} \bibinfo{volume}{38}, \bibinfo{number}{1}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{14--29}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TPAMI.2015.2430335}
+\showDOI{\tempurl}
+
+
+\bibitem[Kothari et~al\mbox{.}(2022)]%
+        {kothari2021human}
+\bibfield{author}{\bibinfo{person}{Parth Kothari}, \bibinfo{person}{Sven
+  Kreiss}, {and} \bibinfo{person}{Alexandre Alahi}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Human Trajectory Forecasting in Crowds: A Deep
+  Learning Perspective}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Intelligent
+  Transportation Systems}} \bibinfo{volume}{23}, \bibinfo{number}{7}
+  (\bibinfo{year}{2022}), \bibinfo{pages}{7386--7400}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TITS.2021.3069362}
+\showDOI{\tempurl}
+
+
+\bibitem[Kretzschmar et~al\mbox{.}(2016)]%
+        {kretzschmar2016socially}
+\bibfield{author}{\bibinfo{person}{Henrik Kretzschmar}, \bibinfo{person}{Markus
+  Spies}, \bibinfo{person}{Christoph Sprunk}, {and} \bibinfo{person}{Wolfram
+  Burgard}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Socially compliant mobile robot navigation via
+  inverse reinforcement learning}.
+\newblock \bibinfo{journal}{\emph{The International Journal of Robotics
+  Research}} \bibinfo{volume}{35}, \bibinfo{number}{11} (\bibinfo{year}{2016}),
+  \bibinfo{pages}{1289--1307}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1177/0278364915619772}
+\showDOI{\tempurl}
+\showeprint{https://doi.org/10.1177/0278364915619772}
+
+
+\bibitem[Lee et~al\mbox{.}(2017)]%
+        {lee2017desire}
+\bibfield{author}{\bibinfo{person}{Namhoon Lee}, \bibinfo{person}{Wongun Choi},
+  \bibinfo{person}{Paul Vernaza}, \bibinfo{person}{Christopher~B. Choy},
+  \bibinfo{person}{Philip H.~S. Torr}, {and} \bibinfo{person}{Manmohan
+  Chandraker}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{DESIRE: Distant Future Prediction in Dynamic Scenes
+  With Interacting Agents}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}.
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2018)]%
+        {li2018deep}
+\bibfield{author}{\bibinfo{person}{Xiucheng Li}, \bibinfo{person}{Kaiqi Zhao},
+  \bibinfo{person}{Gao Cong}, \bibinfo{person}{Christian~S. Jensen}, {and}
+  \bibinfo{person}{Wei Wei}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Deep Representation Learning for Trajectory
+  Similarity Computation}}. In \bibinfo{booktitle}{\emph{{2018 IEEE 34th
+  International Conference on Data Engineering (ICDE)}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{617--628}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE.2018.00062}
+\showDOI{\tempurl}
+
+
+\bibitem[Liang et~al\mbox{.}(2020)]%
+        {liang2020learning}
+\bibfield{author}{\bibinfo{person}{Ming Liang}, \bibinfo{person}{Bin Yang},
+  \bibinfo{person}{Rui Hu}, \bibinfo{person}{Yun Chen}, \bibinfo{person}{Renjie
+  Liao}, \bibinfo{person}{Song Feng}, {and} \bibinfo{person}{Raquel Urtasun}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Learning lane graph representations for motion
+  forecasting}}. In \bibinfo{booktitle}{\emph{{Computer Vision--ECCV 2020,
+  Proceedings}}} (Glasgow, UK). \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{541--556}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-58536-5_32}
+\showDOI{\tempurl}
+
+
+\bibitem[Lin and Su(2005)]%
+        {lin2005shapes}
+\bibfield{author}{\bibinfo{person}{Bin Lin} {and} \bibinfo{person}{Jianwen
+  Su}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{{Shapes based trajectory queries for moving
+  objects}}. In \bibinfo{booktitle}{\emph{{Proceedings of the 13th Annual ACM
+  International Workshop on Geographic Information Systems}}} (Bremen, Germany)
+  \emph{(\bibinfo{series}{GIS '05})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{21–30}.
+\newblock
+\showISBNx{1595931465}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/1097064.1097069}
+\showDOI{\tempurl}
+
+
+\bibitem[Lin et~al\mbox{.}(2022)]%
+        {lin2022contrastive}
+\bibfield{author}{\bibinfo{person}{Yan Lin}, \bibinfo{person}{Huaiyu Wan},
+  \bibinfo{person}{Shengnan Guo}, {and} \bibinfo{person}{Youfang Lin}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{{Contrastive Pre-training of Spatial-Temporal
+  Trajectory Embeddings}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.48550/arXiv.2207.14539}
+\showDOI{\tempurl}
+\showeprint[arxiv]{2207.14539}~[cs.CV]
+
+
+\bibitem[Long et~al\mbox{.}(2018)]%
+        {long2018towards}
+\bibfield{author}{\bibinfo{person}{Pinxin Long}, \bibinfo{person}{Tingxiang
+  Fan}, \bibinfo{person}{Xinyi Liao}, \bibinfo{person}{Wenxi Liu},
+  \bibinfo{person}{Hao Zhang}, {and} \bibinfo{person}{Jia Pan}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Towards Optimally Decentralized Multi-Robot
+  Collision Avoidance via Deep Reinforcement Learning}. In
+  \bibinfo{booktitle}{\emph{2018 IEEE International Conference on Robotics and
+  Automation (ICRA)}}. \bibinfo{pages}{6252--6259}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA.2018.8461113}
+\showDOI{\tempurl}
+
+
+\bibitem[Losey et~al\mbox{.}(2022)]%
+        {losey2022learning}
+\bibfield{author}{\bibinfo{person}{Dylan~P Losey}, \bibinfo{person}{Hong~Jun
+  Jeon}, \bibinfo{person}{Mengxi Li}, \bibinfo{person}{Krishnan Srinivasan},
+  \bibinfo{person}{Ajay Mandlekar}, \bibinfo{person}{Animesh Garg},
+  \bibinfo{person}{Jeannette Bohg}, {and} \bibinfo{person}{Dorsa Sadigh}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Learning latent actions to control assistive
+  robots}}.
+\newblock \bibinfo{journal}{\emph{Autonomous robots}} \bibinfo{volume}{46},
+  \bibinfo{number}{1} (\bibinfo{year}{2022}), \bibinfo{pages}{115--147}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s10514-021-10005-w}
+\showDOI{\tempurl}
+
+
+\bibitem[Losey et~al\mbox{.}(2020)]%
+        {losey2020controlling}
+\bibfield{author}{\bibinfo{person}{Dylan~P. Losey}, \bibinfo{person}{Krishnan
+  Srinivasan}, \bibinfo{person}{Ajay Mandlekar}, \bibinfo{person}{Animesh
+  Garg}, {and} \bibinfo{person}{Dorsa Sadigh}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Controlling Assistive Robots with Learned Latent
+  Actions}}. In \bibinfo{booktitle}{\emph{{2020 IEEE International Conference
+  on Robotics and Automation (ICRA)}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{378--384}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA40945.2020.9197197}
+\showDOI{\tempurl}
+
+
+\bibitem[Maier(1978)]%
+        {maier1978complexity}
+\bibfield{author}{\bibinfo{person}{David Maier}.}
+  \bibinfo{year}{1978}\natexlab{}.
+\newblock \showarticletitle{{The Complexity of Some Problems on Subsequences
+  and Supersequences}}.
+\newblock \bibinfo{journal}{\emph{J. ACM}} \bibinfo{volume}{25},
+  \bibinfo{number}{2} (\bibinfo{date}{apr} \bibinfo{year}{1978}),
+  \bibinfo{pages}{322–336}.
+\newblock
+\showISSN{0004-5411}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/322063.322075}
+\showDOI{\tempurl}
+
+
+\bibitem[Mangalam et~al\mbox{.}(2021)]%
+        {mangalam2021goals}
+\bibfield{author}{\bibinfo{person}{Karttikeya Mangalam}, \bibinfo{person}{Yang
+  An}, \bibinfo{person}{Harshayu Girase}, {and} \bibinfo{person}{Jitendra
+  Malik}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{From goals, waypoints \& paths to long term human
+  trajectory forecasting}}. In \bibinfo{booktitle}{\emph{{Proceedings of the
+  IEEE/CVF International Conference on Computer Vision}}} (Montreal, Canada).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{15233--15242}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV48922.2021.01495}
+\showDOI{\tempurl}
+
+
+\bibitem[Mangalam et~al\mbox{.}(2020)]%
+        {mangalam2020not}
+\bibfield{author}{\bibinfo{person}{Karttikeya Mangalam},
+  \bibinfo{person}{Harshayu Girase}, \bibinfo{person}{Shreyas Agarwal},
+  \bibinfo{person}{Kuan-Hui Lee}, \bibinfo{person}{Ehsan Adeli},
+  \bibinfo{person}{Jitendra Malik}, {and} \bibinfo{person}{Adrien Gaidon}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{It Is Not the Journey But the Destination:
+  Endpoint Conditioned Trajectory Prediction}}. In
+  \bibinfo{booktitle}{\emph{{Computer Vision -- ECCV 2020}}},
+  \bibfield{editor}{\bibinfo{person}{Andrea Vedaldi}, \bibinfo{person}{Horst
+  Bischof}, \bibinfo{person}{Thomas Brox}, {and} \bibinfo{person}{Jan-Michael
+  Frahm}} (Eds.). \bibinfo{publisher}{Springer International Publishing},
+  \bibinfo{address}{Cham}, \bibinfo{pages}{759--776}.
+\newblock
+\showISBNx{978-3-030-58536-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-58536-5_45}
+\showDOI{\tempurl}
+
+
+\bibitem[Messaoud et~al\mbox{.}(2021)]%
+        {messaoud2021trajectory}
+\bibfield{author}{\bibinfo{person}{Kaouther Messaoud},
+  \bibinfo{person}{Nachiket Deo}, \bibinfo{person}{Mohan~M. Trivedi}, {and}
+  \bibinfo{person}{Fawzi Nashashibi}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Trajectory Prediction for Autonomous Driving based
+  on Multi-Head Attention with Joint Agent-Map Representation}}. In
+  \bibinfo{booktitle}{\emph{{2021 IEEE Intelligent Vehicles Symposium (IV)}}}
+  (Nagoya, Japan). \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{165--170}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IV48863.2021.9576054}
+\showDOI{\tempurl}
+
+
+\bibitem[M{\'e}sz{\'a}ros et~al\mbox{.}(2024)]%
+        {meszaros2024trajflow}
+\bibfield{author}{\bibinfo{person}{Anna M{\'e}sz{\'a}ros},
+  \bibinfo{person}{Julian~F Schumann}, \bibinfo{person}{Javier Alonso-Mora},
+  \bibinfo{person}{Arkady Zgonnikov}, {and} \bibinfo{person}{Jens Kober}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{TrajFlow: Learning Distributions over Trajectories
+  for Human Behavior Prediction}}. In \bibinfo{booktitle}{\emph{{2024 IEEE
+  Intelligent Vehicles Symposium (IV)}}} (Jeju Island, Republic of Korea).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{184--191}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IV55156.2024.10588386}
+\showDOI{\tempurl}
+
+
+\bibitem[Miao et~al\mbox{.}(2022)]%
+        {miao2022promoting}
+\bibfield{author}{\bibinfo{person}{Jiayu Miao}, \bibinfo{person}{Tianze Zhou},
+  \bibinfo{person}{Kun Shao}, \bibinfo{person}{Ming Zhou},
+  \bibinfo{person}{Weinan Zhang}, \bibinfo{person}{Jianye Hao},
+  \bibinfo{person}{Yong Yu}, {and} \bibinfo{person}{Jun Wang}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Promoting Quality and Diversity in
+  Population-based Reinforcement Learning via Hierarchical Trajectory Space
+  Exploration}}. In \bibinfo{booktitle}{\emph{{2022 International Conference on
+  Robotics and Automation (ICRA)}}} (Philadelphia, PA, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{7544--7550}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA46639.2022.9811888}
+\showDOI{\tempurl}
+
+
+\bibitem[Morris and Trivedi(2009)]%
+        {morris2009learning}
+\bibfield{author}{\bibinfo{person}{Brendan Morris} {and} \bibinfo{person}{Mohan
+  Trivedi}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Learning trajectory patterns by clustering:
+  Experimental studies and comparative evaluation}.
+\newblock \bibinfo{journal}{\emph{2009 IEEE Conference on Computer Vision and
+  Pattern Recognition, CVPR 2009}} (\bibinfo{year}{2009}), \bibinfo{pages}{312
+  – 319}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPRW.2009.5206559}
+\showDOI{\tempurl}
+\newblock
+\shownote{Cited by: 200}.
+
+
+\bibitem[Narayanan et~al\mbox{.}(2023)]%
+        {narayanan2023ewarenet}
+\bibfield{author}{\bibinfo{person}{Venkatraman Narayanan},
+  \bibinfo{person}{Bala~Murali Manoghar}, \bibinfo{person}{Rama~Prashanth RV},
+  {and} \bibinfo{person}{Aniket Bera}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{EWareNet: Emotion-Aware Pedestrian Intent
+  Prediction and Adaptive Spatial Profile Fusion for Social Robot Navigation}}.
+  In \bibinfo{booktitle}{\emph{{2023 IEEE International Conference on Robotics
+  and Automation (ICRA)}}} (London, United Kingdom). \bibinfo{publisher}{IEEE
+  Computer Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{7569--7575}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA48891.2023.10161504}
+\showDOI{\tempurl}
+
+
+\bibitem[Navarro and Oh(2022)]%
+        {navarro2022social}
+\bibfield{author}{\bibinfo{person}{Ingrid Navarro} {and} \bibinfo{person}{Jean
+  Oh}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Social-PatteRNN: Socially-Aware Trajectory
+  Prediction Guided by Motion Patterns}}. In \bibinfo{booktitle}{\emph{{2022
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}}
+  (Kyoto, Japan). \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{9859--9864}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IROS47612.2022.9981486}
+\showDOI{\tempurl}
+
+
+\bibitem[Nayakanti et~al\mbox{.}(2023)]%
+        {nayakanti2023wayformer}
+\bibfield{author}{\bibinfo{person}{Nigamaa Nayakanti}, \bibinfo{person}{Rami
+  Al-Rfou}, \bibinfo{person}{Aurick Zhou}, \bibinfo{person}{Kratarth Goel},
+  \bibinfo{person}{Khaled~S Refaat}, {and} \bibinfo{person}{Benjamin Sapp}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Wayformer: Motion forecasting via simple \&
+  efficient attention networks}}. In \bibinfo{booktitle}{\emph{{2023 IEEE
+  International Conference on Robotics and Automation (ICRA)}}} (London, UK).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2980--2987}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TPAMI.2024.3352811}
+\showDOI{\tempurl}
+
+
+\bibitem[Okal and Arras(2016)]%
+        {okal2016learning}
+\bibfield{author}{\bibinfo{person}{Billy Okal} {and} \bibinfo{person}{Kai~O.
+  Arras}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Learning socially normative robot navigation
+  behaviors with Bayesian inverse reinforcement learning}. In
+  \bibinfo{booktitle}{\emph{2016 IEEE International Conference on Robotics and
+  Automation (ICRA)}}. \bibinfo{pages}{2889--2895}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA.2016.7487452}
+\showDOI{\tempurl}
+
+
+\bibitem[Pelekis et~al\mbox{.}(2007)]%
+        {pelekis2007similarity}
+\bibfield{author}{\bibinfo{person}{Nikos Pelekis}, \bibinfo{person}{Ioannis
+  Kopanakis}, \bibinfo{person}{Gerasimos Marketos}, \bibinfo{person}{Irene
+  Ntoutsi}, \bibinfo{person}{Gennady Andrienko}, {and} \bibinfo{person}{Yannis
+  Theodoridis}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{{Similarity Search in Trajectory Databases}}. In
+  \bibinfo{booktitle}{\emph{{14th International Symposium on Temporal
+  Representation and Reasoning (TIME'07)}}} (Alicante, Spain).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{129--140}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TIME.2007.59}
+\showDOI{\tempurl}
+
+
+\bibitem[Peng et~al\mbox{.}(2023)]%
+        {peng2023mrgtraj}
+\bibfield{author}{\bibinfo{person}{Yusheng Peng}, \bibinfo{person}{Gaofeng
+  Zhang}, \bibinfo{person}{Jun Shi}, \bibinfo{person}{Xiangyu Li}, {and}
+  \bibinfo{person}{Liping Zheng}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{MRGTraj: A Novel Non-Autoregressive Approach for
+  Human Trajectory Prediction}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Circuits and Systems for
+  Video Technology}} \bibinfo{volume}{34}, \bibinfo{number}{4}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{2318--2331}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TCSVT.2023.3307442}
+\showDOI{\tempurl}
+
+
+\bibitem[Petry et~al\mbox{.}(2020)]%
+        {may2020marc}
+\bibfield{author}{\bibinfo{person}{Lucas~May Petry}, \bibinfo{person}{Camila
+  Leite~Da Silva}, \bibinfo{person}{Andrea Esuli}, \bibinfo{person}{Chiara
+  Renso}, {and} \bibinfo{person}{Vania Bogorny}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{MARC: a robust method for multiple-aspect
+  trajectory classification via space, time, and semantic embeddings}}.
+\newblock \bibinfo{journal}{\emph{International Journal of Geographical
+  Information Science}} \bibinfo{volume}{34}, \bibinfo{number}{7}
+  (\bibinfo{year}{2020}), \bibinfo{pages}{1428--1450}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1080/13658816.2019.1707835}
+\showDOI{\tempurl}
+\showeprint{https://doi.org/10.1080/13658816.2019.1707835}
+
+
+\bibitem[Ranu et~al\mbox{.}(2015)]%
+        {ranu2015indexing}
+\bibfield{author}{\bibinfo{person}{Sayan Ranu}, \bibinfo{person}{Deepak P},
+  \bibinfo{person}{Aditya~D. Telang}, \bibinfo{person}{Prasad Deshpande}, {and}
+  \bibinfo{person}{Sriram Raghavan}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{{Indexing and matching trajectories under
+  inconsistent sampling rates}}. In \bibinfo{booktitle}{\emph{{2015 IEEE 31st
+  International Conference on Data Engineering}}} (Seoul, Korea (South)).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{999--1010}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE.2015.7113351}
+\showDOI{\tempurl}
+
+
+\bibitem[Robicquet et~al\mbox{.}(2016)]%
+        {robicquet2016learning}
+\bibfield{author}{\bibinfo{person}{Alexandre Robicquet}, \bibinfo{person}{Amir
+  Sadeghian}, \bibinfo{person}{Alexandre Alahi}, {and} \bibinfo{person}{Silvio
+  Savarese}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Learning Social Etiquette: Human Trajectory
+  Understanding In Crowded Scenes}}. In \bibinfo{booktitle}{\emph{{Computer
+  Vision -- ECCV 2016}}}, \bibfield{editor}{\bibinfo{person}{Bastian Leibe},
+  \bibinfo{person}{Jiri Matas}, \bibinfo{person}{Nicu Sebe}, {and}
+  \bibinfo{person}{Max Welling}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{549--565}.
+\newblock
+\showISBNx{978-3-319-46484-8}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-319-46484-8_33}
+\showDOI{\tempurl}
+
+
+\bibitem[Salzmann et~al\mbox{.}(2020)]%
+        {salzmann2020trajectron++}
+\bibfield{author}{\bibinfo{person}{Tim Salzmann}, \bibinfo{person}{Boris
+  Ivanovic}, \bibinfo{person}{Punarjay Chakravarty}, {and}
+  \bibinfo{person}{Marco Pavone}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Trajectron++: Dynamically-Feasible Trajectory
+  Forecasting with Heterogeneous Data}}. In \bibinfo{booktitle}{\emph{{Computer
+  Vision -- ECCV 2020}}}, \bibfield{editor}{\bibinfo{person}{Andrea Vedaldi},
+  \bibinfo{person}{Horst Bischof}, \bibinfo{person}{Thomas Brox}, {and}
+  \bibinfo{person}{Jan-Michael Frahm}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{683--700}.
+\newblock
+\showISBNx{978-3-030-58523-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-58523-5_40}
+\showDOI{\tempurl}
+
+
+\bibitem[Sankoff and Kruskal(1983)]%
+        {sankoff1983time}
+\bibfield{author}{\bibinfo{person}{David Sankoff} {and}
+  \bibinfo{person}{Joseph~B Kruskal}.} \bibinfo{year}{1983}\natexlab{}.
+\newblock \showarticletitle{{Time warps, string edits, and macromolecules: the
+  theory and practice of sequence comparison}}.
+\newblock \bibinfo{journal}{\emph{Reading: Addison-Wesley Publication}}
+  (\bibinfo{year}{1983}).
+\newblock
+
+
+\bibitem[Sch{\"o}ller and Knoll(2021)]%
+        {scholler2021flomo}
+\bibfield{author}{\bibinfo{person}{Christoph Sch{\"o}ller} {and}
+  \bibinfo{person}{Alois Knoll}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Flomo: Tractable motion prediction with
+  normalizing flows}}. In \bibinfo{booktitle}{\emph{{2021 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems (IROS)}}} (Prague,
+  Czech Republic). \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{7977--7984}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IROS51168.2021.9636445}
+\showDOI{\tempurl}
+
+
+\bibitem[Shi et~al\mbox{.}(2023)]%
+        {shi2023trajectory}
+\bibfield{author}{\bibinfo{person}{Liushuai Shi}, \bibinfo{person}{Le Wang},
+  \bibinfo{person}{Sanping Zhou}, {and} \bibinfo{person}{Gang Hua}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Trajectory unified transformer for pedestrian
+  trajectory prediction}}. In \bibinfo{booktitle}{\emph{{Proceedings of the
+  IEEE/CVF International Conference on Computer Vision}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{9675--9684}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV51070.2023.00887}
+\showDOI{\tempurl}
+
+
+\bibitem[Shi et~al\mbox{.}(2022)]%
+        {shi2022motion}
+\bibfield{author}{\bibinfo{person}{Shaoshuai Shi}, \bibinfo{person}{Li Jiang},
+  \bibinfo{person}{Dengxin Dai}, {and} \bibinfo{person}{Bernt Schiele}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Motion transformer with global intention
+  localization and local movement refinement}}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing
+  Systems}}  \bibinfo{volume}{35} (\bibinfo{year}{2022}),
+  \bibinfo{pages}{6531--6543}.
+\newblock
+
+
+\bibitem[Shi et~al\mbox{.}(2024)]%
+        {shi2024mtr}
+\bibfield{author}{\bibinfo{person}{Shaoshuai Shi}, \bibinfo{person}{Li Jiang},
+  \bibinfo{person}{Dengxin Dai}, {and} \bibinfo{person}{Bernt Schiele}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{MTR++: Multi-Agent Motion Prediction With
+  Symmetric Scene Modeling and Guided Intention Querying}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Pattern Analysis and
+  Machine Intelligence}} \bibinfo{volume}{46}, \bibinfo{number}{5}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{3955--3971}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TPAMI.2024.3352811}
+\showDOI{\tempurl}
+
+
+\bibitem[Song et~al\mbox{.}(2018)]%
+        {song2018anomalous}
+\bibfield{author}{\bibinfo{person}{Li Song}, \bibinfo{person}{Ruijia Wang},
+  \bibinfo{person}{Ding Xiao}, \bibinfo{person}{Xiaotian Han},
+  \bibinfo{person}{Yanan Cai}, {and} \bibinfo{person}{Chuan Shi}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Anomalous Trajectory Detection Using Recurrent
+  Neural Network}}. In \bibinfo{booktitle}{\emph{{Advanced Data Mining and
+  Applications}}}, \bibfield{editor}{\bibinfo{person}{Guojun Gan},
+  \bibinfo{person}{Bohan Li}, \bibinfo{person}{Xue Li}, {and}
+  \bibinfo{person}{Shuliang Wang}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{263--277}.
+\newblock
+\showISBNx{978-3-030-05090-0}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-05090-0_23}
+\showDOI{\tempurl}
+
+
+\bibitem[Stefani et~al\mbox{.}(2024)]%
+        {stefani2024mapflow}
+\bibfield{author}{\bibinfo{person}{Antonio~Luigi Stefani},
+  \bibinfo{person}{Niccol{\`o} Bisagno}, {and} \bibinfo{person}{Nicola Conci}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{MapFlow: Multi-Agent Pedestrian Trajectory
+  Prediction Using Normalizing Flow}}. In \bibinfo{booktitle}{\emph{{ICASSP
+  2024-2024 IEEE International Conference on Acoustics, Speech and Signal
+  Processing (ICASSP)}}} (Seoul, Republic of Korea). \bibinfo{publisher}{IEEE
+  Computer Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{3295--3299}.
+\newblock
+
+
+\bibitem[Sun et~al\mbox{.}(2018)]%
+        {sun20183dof}
+\bibfield{author}{\bibinfo{person}{Li Sun}, \bibinfo{person}{Zhi Yan},
+  \bibinfo{person}{Sergi~Molina Mellado}, \bibinfo{person}{Marc Hanheide},
+  {and} \bibinfo{person}{Tom Duckett}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{3DOF Pedestrian Trajectory Prediction Learned from
+  Long-Term Autonomous Mobile Robot Deployment Data}}. In
+  \bibinfo{booktitle}{\emph{{2018 IEEE International Conference on Robotics and
+  Automation (ICRA)}}} (Brisbane, Australia). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{5942--5948}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA.2018.8461228}
+\showDOI{\tempurl}
+
+
+\bibitem[Sutskever et~al\mbox{.}(2014)]%
+        {sutskever2014sequence}
+\bibfield{author}{\bibinfo{person}{Ilya Sutskever}, \bibinfo{person}{Oriol
+  Vinyals}, {and} \bibinfo{person}{Quoc~V Le}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{{Sequence to Sequence Learning with Neural
+  Networks}}. In \bibinfo{booktitle}{\emph{{Advances in Neural Information
+  Processing Systems}}} (Montreal, Canada) \emph{(\bibinfo{series}{NIPS'14},
+  Vol.~\bibinfo{volume}{27})},
+  \bibfield{editor}{\bibinfo{person}{Z.~Ghahramani},
+  \bibinfo{person}{M.~Welling}, \bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~Lawrence}, {and} \bibinfo{person}{K.Q. Weinberger}}
+  (Eds.). \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{address}{Cambridge, MA, USA}, \bibinfo{pages}{3104–3112}.
+\newblock
+\urldef\tempurl%
+\url{https://proceedings.neurips.cc/paper_files/paper/2014/file/a14ac55a4f27472c5d894ec1c3c743d2-Paper.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Syed and Morris(2020)]%
+        {syed2020cnn}
+\bibfield{author}{\bibinfo{person}{Arsal Syed} {and}
+  \bibinfo{person}{Brendan~Tran Morris}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{CNN, Segmentation or Semantic Embeddings:
+  Evaluating Scene Context for Trajectory Prediction}}. In
+  \bibinfo{booktitle}{\emph{{Advances in Visual Computing}}},
+  \bibfield{editor}{\bibinfo{person}{George Bebis}, \bibinfo{person}{Zhaozheng
+  Yin}, \bibinfo{person}{Edward Kim}, \bibinfo{person}{Jan Bender},
+  \bibinfo{person}{Kartic Subr}, \bibinfo{person}{Bum~Chul Kwon},
+  \bibinfo{person}{Jian Zhao}, \bibinfo{person}{Denis Kalkofen}, {and}
+  \bibinfo{person}{George Baciu}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{706--717}.
+\newblock
+\showISBNx{978-3-030-64559-5}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-64559-5_56}
+\showDOI{\tempurl}
+
+
+\bibitem[Taghizadeh et~al\mbox{.}(2021)]%
+        {taghizadeh2021meaningful}
+\bibfield{author}{\bibinfo{person}{Saeed Taghizadeh}, \bibinfo{person}{Abel
+  Elekes}, \bibinfo{person}{Martin Schäler}, {and} \bibinfo{person}{Klemens
+  Böhm}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{How meaningful are similarities in deep trajectory
+  representations?}}
+\newblock \bibinfo{journal}{\emph{Information Systems}}  \bibinfo{volume}{98}
+  (\bibinfo{year}{2021}), \bibinfo{pages}{101452}.
+\newblock
+\showISSN{0306-4379}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.is.2019.101452}
+\showDOI{\tempurl}
+
+
+\bibitem[Tang et~al\mbox{.}(2024)]%
+        {tang2024hpnet}
+\bibfield{author}{\bibinfo{person}{Xiaolong Tang}, \bibinfo{person}{Meina Kan},
+  \bibinfo{person}{Shiguang Shan}, \bibinfo{person}{Zhilong Ji},
+  \bibinfo{person}{Jinfeng Bai}, {and} \bibinfo{person}{Xilin Chen}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{Hpnet: Dynamic trajectory forecasting with
+  historical prediction attention}}. In \bibinfo{booktitle}{\emph{{IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition}}} (Seattle, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{15261--15270}.
+\newblock
+
+
+\bibitem[Tsai and Oh(2020)]%
+        {tsai2020generative}
+\bibfield{author}{\bibinfo{person}{Chieh-En Tsai} {and} \bibinfo{person}{Jean
+  Oh}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{A Generative Approach for Socially Compliant
+  Navigation}}. In \bibinfo{booktitle}{\emph{{2020 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2160--2166}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA40945.2020.9197497}
+\showDOI{\tempurl}
+
+
+\bibitem[Varadarajan et~al\mbox{.}(2022)]%
+        {varadarajan2022multipath}
+\bibfield{author}{\bibinfo{person}{Balakrishnan Varadarajan},
+  \bibinfo{person}{Ahmed Hefny}, \bibinfo{person}{Avikalp Srivastava},
+  \bibinfo{person}{Khaled~S Refaat}, \bibinfo{person}{Nigamaa Nayakanti},
+  \bibinfo{person}{Andre Cornman}, \bibinfo{person}{Kan Chen},
+  \bibinfo{person}{Bertrand Douillard}, \bibinfo{person}{Chi~Pang Lam},
+  \bibinfo{person}{Dragomir Anguelov}, {et~al\mbox{.}}}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Multipath++: Efficient information fusion and
+  trajectory aggregation for behavior prediction}}. In
+  \bibinfo{booktitle}{\emph{{2022 IEEE International Conference on Robotics and
+  Automation (ICRA)}}} (Philadelphia, USA). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{7814--7821}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA46639.2022.9812107}
+\showDOI{\tempurl}
+
+
+\bibitem[Vasquez et~al\mbox{.}(2014)]%
+        {vasquez2014inverse}
+\bibfield{author}{\bibinfo{person}{Dizan Vasquez}, \bibinfo{person}{Billy
+  Okal}, {and} \bibinfo{person}{Kai~O. Arras}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Inverse Reinforcement Learning algorithms and
+  features for robot navigation in crowds: An experimental comparison}. In
+  \bibinfo{booktitle}{\emph{2014 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems}}. \bibinfo{pages}{1341--1346}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IROS.2014.6942731}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2023a)]%
+        {wang2023prophnet}
+\bibfield{author}{\bibinfo{person}{Xishun Wang}, \bibinfo{person}{Tong Su},
+  \bibinfo{person}{Fang Da}, {and} \bibinfo{person}{Xiaodong Yang}.}
+  \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{{Prophnet: Efficient agent-centric motion
+  forecasting with anchor-informed proposals}}. In
+  \bibinfo{booktitle}{\emph{{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}}} (Vancouver, Canada). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{21995--22003}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52729.2023.02106}
+\showDOI{\tempurl}
+
+
+\bibitem[Wang et~al\mbox{.}(2023b)]%
+        {wang2023fend}
+\bibfield{author}{\bibinfo{person}{Yuning Wang}, \bibinfo{person}{Pu Zhang},
+  \bibinfo{person}{Lei Bai}, {and} \bibinfo{person}{Jianru Xue}.}
+  \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{{Fend: A future enhanced distribution-aware
+  contrastive learning framework for long-tail trajectory prediction}}. In
+  \bibinfo{booktitle}{\emph{{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}}} (Vancouver, Canada). \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{1400--1409}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52729.2023.00141}
+\showDOI{\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2022)]%
+        {xu2022socialvae}
+\bibfield{author}{\bibinfo{person}{Pei Xu}, \bibinfo{person}{Jean-Bernard
+  Hayet}, {and} \bibinfo{person}{Ioannis Karamouzas}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Socialvae: Human trajectory prediction using
+  timewise latents}}. In \bibinfo{booktitle}{\emph{{Computer Vision--ECCV 2022,
+  Proceedings}}} (Tel Aviv, Israel). \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{511--528}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-19772-7_30}
+\showDOI{\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2021)]%
+        {xu2021tra2tra}
+\bibfield{author}{\bibinfo{person}{Yi Xu}, \bibinfo{person}{Dongchun Ren},
+  \bibinfo{person}{Mingxia Li}, \bibinfo{person}{Yuehai Chen},
+  \bibinfo{person}{Mingyu Fan}, {and} \bibinfo{person}{Huaxia Xia}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Tra2Tra: Trajectory-to-Trajectory Prediction With
+  a Global Social Spatial-Temporal Attentive Neural Network}}.
+\newblock \bibinfo{journal}{\emph{IEEE Robotics and Automation Letters}}
+  \bibinfo{volume}{6}, \bibinfo{number}{2} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{1574--1581}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/LRA.2021.3057326}
+\showDOI{\tempurl}
+
+
+\bibitem[Yamaguchi et~al\mbox{.}(2011)]%
+        {yamaguchi2011you}
+\bibfield{author}{\bibinfo{person}{Kota Yamaguchi},
+  \bibinfo{person}{Alexander~C. Berg}, \bibinfo{person}{Luis~E. Ortiz}, {and}
+  \bibinfo{person}{Tamara~L. Berg}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Who are you with and where are you going?}. In
+  \bibinfo{booktitle}{\emph{CVPR 2011}}. \bibinfo{pages}{1345--1352}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR.2011.5995468}
+\showDOI{\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2022)]%
+        {yang2022tmn}
+\bibfield{author}{\bibinfo{person}{Peilun Yang}, \bibinfo{person}{Hanchen
+  Wang}, \bibinfo{person}{Defu Lian}, \bibinfo{person}{Ying Zhang},
+  \bibinfo{person}{Lu Qin}, {and} \bibinfo{person}{Wenjie Zhang}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{TMN: Trajectory Matching Networks for Predicting
+  Similarity}}. In \bibinfo{booktitle}{\emph{{2022 IEEE 38th International
+  Conference on Data Engineering (ICDE)}}}. \bibinfo{publisher}{IEEE Computer
+  Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{1700--1713}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE53745.2022.00173}
+\showDOI{\tempurl}
+
+
+\bibitem[Yang et~al\mbox{.}(2021)]%
+        {yang2021t3s}
+\bibfield{author}{\bibinfo{person}{Peilun Yang}, \bibinfo{person}{Hanchen
+  Wang}, \bibinfo{person}{Ying Zhang}, \bibinfo{person}{Lu Qin},
+  \bibinfo{person}{Wenjie Zhang}, {and} \bibinfo{person}{Xuemin Lin}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{T3S: Effective Representation Learning for
+  Trajectory Similarity Computation}}. In \bibinfo{booktitle}{\emph{{2021 IEEE
+  37th International Conference on Data Engineering (ICDE)}}}.
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2183--2188}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE51399.2021.00221}
+\showDOI{\tempurl}
+
+
+\bibitem[Yao et~al\mbox{.}(2019)]%
+        {yao2019computing}
+\bibfield{author}{\bibinfo{person}{Di Yao}, \bibinfo{person}{Gao Cong},
+  \bibinfo{person}{Chao Zhang}, {and} \bibinfo{person}{Jingping Bi}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{Computing Trajectory Similarity in Linear Time: A
+  Generic Seed-Guided Neural Metric Learning Approach}}. In
+  \bibinfo{booktitle}{\emph{{2019 IEEE 35th International Conference on Data
+  Engineering (ICDE)}}}. \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{1358--1369}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE.2019.00123}
+\showDOI{\tempurl}
+
+
+\bibitem[Yi et~al\mbox{.}(1998)]%
+        {yi1998efficient}
+\bibfield{author}{\bibinfo{person}{Byoung-Kee Yi}, \bibinfo{person}{H.V.
+  Jagadish}, {and} \bibinfo{person}{C. Faloutsos}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{{Efficient retrieval of similar time sequences
+  under time warping}}. In \bibinfo{booktitle}{\emph{{Proceedings 14th
+  International Conference on Data Engineering}}}. \bibinfo{publisher}{IEEE
+  Computer Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{201--208}.
+\newblock
+\showISBNx{0818682892}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICDE.1998.655778}
+\showDOI{\tempurl}
+
+
+\bibitem[Yuan et~al\mbox{.}(2021)]%
+        {yuan2021agentformer}
+\bibfield{author}{\bibinfo{person}{Ye Yuan}, \bibinfo{person}{Xinshuo Weng},
+  \bibinfo{person}{Yanglan Ou}, {and} \bibinfo{person}{Kris~M Kitani}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Agentformer: Agent-aware transformers for
+  socio-temporal multi-agent forecasting}}. In
+  \bibinfo{booktitle}{\emph{{Proceedings of the IEEE/CVF International
+  Conference on Computer Vision}}} (Montreal, Canada). \bibinfo{publisher}{IEEE
+  Computer Society}, \bibinfo{address}{Los Alamitos, CA, USA},
+  \bibinfo{pages}{9813--9823}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICCV48922.2021.00967}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2021)]%
+        {zhang2021stenet}
+\bibfield{author}{\bibinfo{person}{Bo Zhang}, \bibinfo{person}{Chengzhi Yuan},
+  \bibinfo{person}{Tao Wang}, {and} \bibinfo{person}{Hongbo Liu}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{STENet: A hybrid spatio-temporal embedding network
+  for human trajectory forecasting}}.
+\newblock \bibinfo{journal}{\emph{Engineering Applications of Artificial
+  Intelligence}}  \bibinfo{volume}{106} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{104487}.
+\newblock
+\showISSN{0952-1976}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.engappai.2021.104487}
+\showDOI{\tempurl}
+
+
+\bibitem[ZHANG et~al\mbox{.}(2020)]%
+        {zhang2020trajectory}
+\bibfield{author}{\bibinfo{person}{Hanyuan ZHANG}, \bibinfo{person}{Xingyu
+  ZHANG}, \bibinfo{person}{Qize JIANG}, \bibinfo{person}{Baihua ZHENG},
+  \bibinfo{person}{Zhenbang SUN}, \bibinfo{person}{Weiwei SUN}, {and}
+  \bibinfo{person}{Changhu WANG}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Trajectory similarity learning with auxiliary
+  supervision and optimal matching}}. In \bibinfo{booktitle}{\emph{{Proceedings
+  of the Twenty-Ninth International Joint Conference on Artificial
+  Intelligence,}}} \emph{(\bibinfo{series}{IJCAI'20})}.
+  \bibinfo{publisher}{Research Collection School Of Information Systems},
+  \bibinfo{address}{Yokohama, Yokohama, Japan}, Article
+  \bibinfo{articleno}{444}, \bibinfo{numpages}{7}~pages.
+\newblock
+\showISBNx{9780999241165}
+\urldef\tempurl%
+\url{https://ink.library.smu.edu.sg/sis_research/5276}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2023)]%
+        {zhang2023forceformer}
+\bibfield{author}{\bibinfo{person}{Weicheng Zhang}, \bibinfo{person}{Hao
+  Cheng}, \bibinfo{person}{Fatema~T Johora}, {and} \bibinfo{person}{Monika
+  Sester}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{ForceFormer: exploring social force and
+  transformer for pedestrian trajectory prediction}}. In
+  \bibinfo{booktitle}{\emph{{2023 IEEE Intelligent Vehicles Symposium (IV)}}}
+  (Anchorage, USA). \bibinfo{publisher}{IEEE Computer Society},
+  \bibinfo{address}{Los Alamitos, CA, USA}, \bibinfo{pages}{1--7}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/IV55152.2023.10186643}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhang et~al\mbox{.}(2024)]%
+        {zhang2024real}
+\bibfield{author}{\bibinfo{person}{Zhejun Zhang}, \bibinfo{person}{Alexander
+  Liniger}, \bibinfo{person}{Christos Sakaridis}, \bibinfo{person}{Fisher Yu},
+  {and} \bibinfo{person}{Luc~V Gool}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{Real-time motion prediction via heterogeneous
+  polyline transformer with relative pose encoding}}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing
+  Systems}}  \bibinfo{volume}{36} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Zhou et~al\mbox{.}(2023c)]%
+        {zhou2023csr}
+\bibfield{author}{\bibinfo{person}{Hao Zhou}, \bibinfo{person}{Dongchun Ren},
+  \bibinfo{person}{Xu Yang}, \bibinfo{person}{Mingyu Fan}, {and}
+  \bibinfo{person}{Hai Huang}.} \bibinfo{year}{2023}\natexlab{c}.
+\newblock \showarticletitle{{CSR: Cascade Conditional Variational Auto Encoder
+  with Socially-aware Regression for Pedestrian Trajectory Prediction}}.
+\newblock \bibinfo{journal}{\emph{Pattern Recognition}}  \bibinfo{volume}{133}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{109030}.
+\newblock
+\showISSN{0031-3203}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.patcog.2022.109030}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2023a)]%
+        {zhou2023spatial}
+\bibfield{author}{\bibinfo{person}{Silin Zhou}, \bibinfo{person}{Peng Han},
+  \bibinfo{person}{Di Yao}, \bibinfo{person}{Lisi Chen}, {and}
+  \bibinfo{person}{Xiangliang Zhang}.} \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{Spatial-temporal fusion graph framework for
+  trajectory similarity computation}.
+\newblock \bibinfo{journal}{\emph{World Wide Web}} \bibinfo{volume}{26},
+  \bibinfo{number}{4} (\bibinfo{year}{2023}), \bibinfo{pages}{1501--1523}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/s11280-022-01089-0}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2023b)]%
+        {zhou2023grlstm}
+\bibfield{author}{\bibinfo{person}{Silin Zhou}, \bibinfo{person}{Jing Li},
+  \bibinfo{person}{Hao Wang}, \bibinfo{person}{Shuo Shang}, {and}
+  \bibinfo{person}{Peng Han}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{{GRLSTM: Trajectory Similarity Computation with
+  Graph-Based Residual LSTM}}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the AAAI Conference on
+  Artificial Intelligence}} \bibinfo{volume}{37}, \bibinfo{number}{4}
+  (\bibinfo{date}{Jun.} \bibinfo{year}{2023}), \bibinfo{pages}{4972--4980}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1609/aaai.v37i4.25624}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2022)]%
+        {zhou2022hivt}
+\bibfield{author}{\bibinfo{person}{Zikang Zhou}, \bibinfo{person}{Luyao Ye},
+  \bibinfo{person}{Jianping Wang}, \bibinfo{person}{Kui Wu}, {and}
+  \bibinfo{person}{Kejie Lu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Hivt: Hierarchical vector transformer for
+  multi-agent motion prediction}}. In \bibinfo{booktitle}{\emph{{IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition}}} (New Orleans, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{8823--8833}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52688.2022.00862}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}
