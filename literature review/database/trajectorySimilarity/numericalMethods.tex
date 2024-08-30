@@ -1,0 +1,46 @@
+\subsection{Numerical Methods for Trajectory Distance}\label{sec: numerical methods}
+
+Numerical methods have been widely used in the literature for computing the distance between trajectories.
+
+\method{Hausdorff Distance}
+
+\gls{hd} has been widely used in image matching \cite{huttenlocher1993comparing,jesorsky2001robust} and trajectories comparison \cite{belogay1997calculating}. It is based between the maximum distance between each point from a set to all points in the other set, being the sets curves or images.
+
+\method{Fréchet Distance}
+
+\gls{fd} \cite{eiter1994computing} is similar to \gls{hd}, but considers the directions of curves to compute the minimal trajectory.
+
+
+\method{Longest Common Subsequence}
+
+\gls{lcss} \cite{maier1978complexity} considers as metric only the part of trajectories which match the most, given a tolerance parameter. This also makes it sensitive to the parameter selection and noise.
+
+\method{Dynamic Time Warp}
+
+\gls{dtw} \cite{sankoff1983time,yi1998efficient} is based on aligning one or more adjacents points for computing a distance between trajectories. It handles trajectories of different lengths, however it causes distortions which might not have been in the trajectories.
+
+\method{Edit distance with Real Penalty}
+
+\gls{erp} \cite{chen2004marriage} it is an ``edit-based distance'' meaning that this metric takes in account a cost which is based in how many edits one trajectory needs to match the other. 
+
+In this distance the points of a trajectory are taken as reference and the points and edits are performed on the other trajectory for reducing the distance.
+
+\method{Edit Distance on Real Sequence}
+
+\gls{edr} \cite{chen2005robust} considers a tolerance parameter like \gls{lcss} and adds a cost value on its evaluation. This cost increases with the number of editions that are necessary to match both trajectories within the tolerance error.
+%
+This makes \gls{edr} more robust to gaps in the trajectory and outliers.
+
+\method{Edit Distance with Projections}
+
+\gls{edwp} \cite{ranu2015indexing} performs interpolations between points and tries to match segments of trajectories. 
+
+\method{Locality In-between Polylines}
+
+\gls{lip} \cite{pelekis2007similarity} computes distance based on the area of polygons made between the two curves. It does not consider warping, but instead it is sort of an integral of the area between curves.
+
+Variations are introduced in \cite{pelekis2007similarity} to support time and direction.
+
+\method{One-Way Distance}
+
+\gls{owd} \cite{lin2005shapes} is a measure based on the spatial shapes of moving objects. It is based on the average distance of each point of one trajectory and the other trajectory.

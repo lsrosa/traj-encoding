@@ -1,0 +1,164 @@
+\subsection{Social Robots}\label{subsec: social robots}
+
+\method{2014 - Inverse Reinforcement Learning algorithms and features for robot navigation in crowds: An experimental comparison}
+
+\cite{vasquez2014inverse} Learning from demonstrations, they define a good number of hard-coded features, like social force ones.
+
+\rev{no encoding, out-of-scope}
+
+\method{2016 - Learning socially normative robot navigation behaviors with bayesian inverse reinforcement learning}
+
+\cite{okal2016learning} Learns behaviors from demonstrations using a control graph-structured representation.
+
+\rev{no encoding, out-of-scope} 
+
+\method{2016 - Socially compliant mobile robot navigation via inverse reinforcement learning}
+
+\cite{kretzschmar2016socially} use a Hamiltonian Markov chain Monte Carlo sampling for learning trajectories from demonstrations or pedestrians.
+%
+The map is a parsed into a Voronoi-based graph for improving efficiency.
+
+\rev{no encoding, out-of-scope}
+
+\method{2017 - DESIRE: Distant Future Prediction in Dynamic Scenes With Interacting Agents}
+
+\rev{add to table}
+
+\textbf{Name: DESIRE}
+
+\cite{lee2017desire} proposes a deep stochastic inverse optimal controller \gls{rnn} encoder-decoder for multiple agents considering multi-modal predictions, which uses the past trajectories and the scene for making prediction.
+
+The model first encodes trajectories with \glspl{rnn}, and then creates predictions with a \gls{cvae} before being decoded by another \gls{rnn}. 
+%
+Then a \gls{rnn}-based refinement module, which also uses a \gls{cnn} feature scene extractor is used for refining the score of the generated trajectories.
+
+
+\method{2017 - Decentralized non-communicating multiagent collision avoidance with deep reinforcement learning}
+
+\cite{chen2017decentralized} A little bit similar with \cite{chen2017socially}, the reward function  is a bit simpler, and here they do not handle multi-agents. 
+
+The idea is to learn one policy, which is used by multiple agents, and having the social behaviors emerge from it.
+
+\rev{no encoding, out-of-scope}
+
+\method{2017 - Socially aware motion planning with deep reinforcement learning}
+
+\textbf{Name: SA-CADRL}
+
+\cite{chen2017socially} (a bit similar to \cite{chen2017decentralized}) proposes a motion planning using \gls{drl} which focus on what \textbf{not to do} instead of trying to learn all possible socially acceptable rules.
+%
+The approach also handles cases with multiple agents using a ?symetrical \gls{nn}?.
+%
+The idea behind this is that each agent has a simple collision avoidance mechanism from which social patterns emerge.
+%
+This is called reciprocity, and is mathematically captured as both agents having the same policy ($\pi = \tilde{\pi}$).
+
+Some social norms (like passing through the right) is motivated through reward manipulation in the loss \rev{kind of cheating}
+
+To handle multiple agents, they make a fully connected \gls{nn} with maxpooling layers, so the number of agents is hard-encoded in the network.
+
+The approach is tested on a real robot.
+
+\rev{no encoding, out-of-scope}
+
+\method{2018 - Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning}
+
+\rev{add to table}
+
+\textbf{Name: GA3C-CADRL}
+
+\cite{everett2018motion} propose a \gls{drl} framework for robots interacting and cooperating with humans walking around.
+%
+They propose an \gls{lstm} based approach which can observe an arbitrary number of agents (1xN)
+
+The policy observes the distance of the agent w.r.t. to the goal and other agents, and learns an \gls{a3c} policy which computes actions for collision avoidance.
+%
+The trajectory of the distance from agents is encoded with an \gls{lstm}, which is then passed to the \gls{a3c} policy.
+
+Tested with simulations and also with real robot.
+
+\method{2018 - Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning}
+
+\cite{long2018towards} proposes learning a policy for decentralized collision avoidance.
+%
+The policy is trained in a multi-agent \rev{simulation?} using policy gradient and \gls{rl}.
+%
+The policy gets velocities and sensor data, which are passed to a \gls{cnn} for computing actions.
+%
+Tested in simulation.
+%
+\rev{not really using encoding, out-of-scope}
+
+\method{2020 - Trajectron++: Dynamically-Feasible Trajectory Forecasting with Heterogeneous Data}
+
+\cite{salzmann2020trajectron++}  presents a graph structured recurrent model for learning trajectories considering dynamics and environment constraints (maps) by extending \cite{ivanovic2019trajectron} by adding support to multi-agents and heterogeneous data. The robot in question is an autonomous car traveling in a city. \rev{\cite{ivanovic2019trajectron} already handles multiple agents} 
+
+The scene is represented as a graph, with nodes representing agents (cars and ppl), and edges representing interactions.
+%
+The scene evolution is encoded by a \gls{lstm} and attention is used to balance the weights in the interactions.
+%
+Finally a \gls{cnn} is used to aggregate heterogeneous data from a map, and semantic semantic information (pedestrian crossing", "drivable area", "walkway"). 
+%
+Multi-modality is achieved through the use of \gls{cvae} \rev{but it is not very clear where it is used}.
+
+\method{2020 - A Generative Approach for Socially Compliant Navigation}
+
+\textbf{NaviGAN}
+
+\cite{tsai2020generative} focus on learning human-compliant behaviors for robots navigating in human crowded environments, by optimizing trajectories both for comfort (the absence of annoyance and stress for humans) and naturalness (the similarity between robots and humans).
+
+They state ``reinforcement learning approaches tend to optimize on the comfort aspect of the socially compliant navigation, whereas the inverse reinforcement learning approaches are designed to achieve natural behavior.''
+
+A \gls{lstm} encoder-decoder is defined for each of three social-interaction force (intention, social interaction and fluctuation) from \cite{helbing1995social} to improves interpretability, which are used with a adversarial training to reduce the data-bias tendency of \glspl{lstm}.
+
+The trajectories of the robot and other agents (humans) are encoded with \glspl{lstm}, for intention just the robot trajectory is encoded, for social interaction and fluctuation all trajectories are encoded and passed through a \texttt{maxpooling} layer before the \gls{lstm}.
+%
+Both encoding are passed to an adversarial training using demonstrations.
+
+
+\method{2021 - Learning World Transition Model for Socially Aware Robot Navigation}
+
+\rev{add to table}
+
+\cite{cui2021learning} propose learning a world transition model from 2D laser scans. The model is used in simulation for learning a policy using a lot of simulated data and few real data.
+
+The laser data is transformed into an obstacle map which is said to better differentiate static from moving obstacles, and the moving ones are encoded with \glspl{lstm}.
+
+In the world simulation, a shared policy is sampled by each agent, meaning that the pedestrian predictors are aware about the robot (NxN).
+
+The approach is tested also with the real robot.
+	
+\method{2021 - Probabilistic Dynamic Crowd Prediction for Social Navigation}
+
+\rev{add to table}
+
+\cite{kiss2021probabilistic} proposed to predict the crowd flow in a macroscopic way using density and velocities, which are passed to a \gls{rnn} for making predictions which are used for robot planning.
+
+They use a social invasiveness metric which depends on the total number of interactions in the planning and relative velocity magnitudes.
+
+The \gls{rnn} is convolutional, between each \gls{rnn} layer there are convolution and down-sampling layers (upsampling for the decoder), which is used to predict the trajectories of each crowd group, represented by density, velocity and velocity variance.
+
+Then planning is made minimizing the invasiveness given the crowds predictions and robot dynamics.  
+
+
+\method{2021 - Trajectory Prediction for Autonomous Driving based on Multi-Head Attention with Joint Agent-Map Representation}
+
+\cite{messaoud2021trajectory} proposes a method which considers the map and multi-agents to predict trajectories, as one influences the other using multi-head attention mechanisms for dealing with multi-modality.
+
+The map is processed by a \gls{cnn} and the trajectory of each agent in the scene (cars) is encoded with an \gls{lstm}, forming the context embedding, which is fed to multiple attention heads.
+%
+The agent of interest's trajectory is also encoded with an \gls{lstm}, which is concatenated with the attention heads output to be decoded by \glspl{lstm} (one per attention head) to obtain trajectory predictions.
+
+Tests are made on datasets of cars running on roads.
+
+\method{2023 - EWareNet: Emotion-Aware Pedestrian Intent Prediction and Adaptive Spatial Profile Fusion for Social Robot Navigation}
+
+\textbf{Name: EWareNet}
+
+\cite{narayanan2023ewarenet} presents pedestrian intent using a transformer model from RGB images which is integrated with path navigation schemes.
+%
+The pedestrian skeleton is passed through a convolutional encoder-decoder, and its image is used with a \gls{cnn} for detecting emotion. 
+%
+Both parts are decoded fo predicting the trajectory, which is then used in a path-planning for the robot.
+
+\rev{not sure if this is out-of-the-scope}

@@ -1,0 +1,24 @@
+\subsection{Nomenclature and Definitions}\label{subsec: nomenclature and definitions}
+
+This section briefly introduces the general nomenclature, definitions and notations used hereinafter.
+
+We define a trajectory $\traj$ as a series of $\nPoints$ $\nDims$-dimensional points $\point\in\realSet{\nDims}$, each point acquired with an associated timestamp $\ts$ over a period of time $\timePeriod$, as described in Equation \ref{eq: trajectory definition}.
+
+\begin{equation}\label{eq: trajectory definition}
+	\traj = 
+	\left\{
+	\begin{array}{c}
+		\point_i \\
+		\ts_i
+	\end{array}
+	\right\}
+	~|~ \ts_i < \ts_{i+1} \leq \timePeriod ~\forall~ i \in \{0, \hdots, \nPoints\}
+\end{equation}
+
+We are interested in the mappings of trajectories to lower dimensional spaces, and will use the terms ``embedding'' and ``encoding'' interchangeably hereinafter.
+%
+Given a set of trajectories $\trajSet$, a trajectory embedding is defined as a $\embDims$-dimensional point $\emb\in\realSet{\embDims}$ which is obtained using a mapping function $\embFunc:\trajSet\rightarrow\embSet$ as $\emb = \embFunc(\traj)$, where $\embSet$ is the set of points obtained by applying $\embFunc$ over all trajectories in $\trajSet$.
+
+A distance measure or metric between two trajectories is defined as $\distTrajTraj{\traj_a}{\traj_b}:\trajSet\rightarrow\realSet{1}$.
+%
+Similarly, a distance or metric between two embeddings is defined as $\distEmbEmb{\emb_a}{\emb_b}:\embSet\rightarrow\realSet{1}$.
