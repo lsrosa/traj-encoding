@@ -1,1 +1,21 @@
 \section{Multi-Agents}\label{sec: multi-agents}
+
+\subsection{1x1}
+
+\subsection{1xN}
+
+\subsection{nxN}
+
+\rev{just for testing} \cite{zhou2022hivt} In this paper, the encoding will be done in multiple steps. 
+\begin{itemize}
+	\item Extract for each agent its surrounding region (other agents and lanes) and encoded the corresponding past observations, using a coordinate system that is normalized to this agent last observed position and velocity, where we embed the agents own trajectory as well as the surrounding agents trajectory.
+	\item We apply multi head cross attention with the agent as the query and its neighbors as key and values, and a recursive layer afterwards.
+	\item The spatial encodings are then encoded temporally using a time axis transformer block
+	\item Similar to the encoding of the neighbors, the encoded agent position is enhanced by cross attention with the neighboring lane segments (here, each vector in a polyline is treated individually)
+	\item An transformer is used to encode the interactions with each agent, where their states are expanded by the translations and rotations between the coordinate systems.
+	\item The decoder used is simple, however, the joint prediction are not really joint, just parallel
+	
+\end{itemize}
+Here, using for the local encoding two different transformers, first along the agent axis and then along the time axis, significantly reduces the computational cost of the model.
+
+\subsection{NxN}

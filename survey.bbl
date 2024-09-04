@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{6}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,5 +36,96 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Da and Zhang(2022)]%
+        {da2022path}
+\bibfield{author}{\bibinfo{person}{Fang Da} {and} \bibinfo{person}{Yu Zhang}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Path-aware graph attention for hd maps in motion
+  prediction}}. In \bibinfo{booktitle}{\emph{{2022 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Philadelphia, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{6430--6436}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA46639.2022.9812100}
+\showDOI{\tempurl}
+
+
+\bibitem[Helbing and Moln\'ar(1995)]%
+        {helbing1995social}
+\bibfield{author}{\bibinfo{person}{Dirk Helbing} {and} \bibinfo{person}{P\'eter
+  Moln\'ar}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Social force model for pedestrian dynamics}.
+\newblock \bibinfo{journal}{\emph{Phys. Rev. E}}  \bibinfo{volume}{51}
+  (\bibinfo{date}{May} \bibinfo{year}{1995}), \bibinfo{pages}{4282--4286}.
+\newblock
+Issue 5.
+\urldef\tempurl%
+\url{https://doi.org/10.1103/PhysRevE.51.4282}
+\showDOI{\tempurl}
+
+
+\bibitem[Liang et~al\mbox{.}(2020)]%
+        {liang2020learning}
+\bibfield{author}{\bibinfo{person}{Ming Liang}, \bibinfo{person}{Bin Yang},
+  \bibinfo{person}{Rui Hu}, \bibinfo{person}{Yun Chen}, \bibinfo{person}{Renjie
+  Liao}, \bibinfo{person}{Song Feng}, {and} \bibinfo{person}{Raquel Urtasun}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{Learning lane graph representations for motion
+  forecasting}}. In \bibinfo{booktitle}{\emph{{Computer Vision--ECCV 2020,
+  Proceedings}}} (Glasgow, UK). \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{541--556}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-030-58536-5_32}
+\showDOI{\tempurl}
+
+
+\bibitem[Tsai and Oh(2020)]%
+        {tsai2020generative}
+\bibfield{author}{\bibinfo{person}{Chieh-En Tsai} {and} \bibinfo{person}{Jean
+  Oh}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{{A Generative Approach for Socially Compliant
+  Navigation}}. In \bibinfo{booktitle}{\emph{{2020 IEEE International
+  Conference on Robotics and Automation (ICRA)}}} (Paris, France).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{2160--2166}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICRA40945.2020.9197497}
+\showDOI{\tempurl}
+
+
+\bibitem[Xu et~al\mbox{.}(2022)]%
+        {xu2022socialvae}
+\bibfield{author}{\bibinfo{person}{Pei Xu}, \bibinfo{person}{Jean-Bernard
+  Hayet}, {and} \bibinfo{person}{Ioannis Karamouzas}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Socialvae: Human trajectory prediction using
+  timewise latents}}. In \bibinfo{booktitle}{\emph{{Computer Vision--ECCV 2022,
+  Proceedings}}} (Tel Aviv, Israel). \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{511--528}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-3-031-19772-7_30}
+\showDOI{\tempurl}
+
+
+\bibitem[Zhou et~al\mbox{.}(2022)]%
+        {zhou2022hivt}
+\bibfield{author}{\bibinfo{person}{Zikang Zhou}, \bibinfo{person}{Luyao Ye},
+  \bibinfo{person}{Jianping Wang}, \bibinfo{person}{Kui Wu}, {and}
+  \bibinfo{person}{Kejie Lu}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{Hivt: Hierarchical vector transformer for
+  multi-agent motion prediction}}. In \bibinfo{booktitle}{\emph{{IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition}}} (New Orleans, USA).
+  \bibinfo{publisher}{IEEE Computer Society}, \bibinfo{address}{Los Alamitos,
+  CA, USA}, \bibinfo{pages}{8823--8833}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CVPR52688.2022.00862}
+\showDOI{\tempurl}
+
 
 \end{thebibliography}

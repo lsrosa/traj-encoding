@@ -42,12 +42,12 @@ def feature_hist(feature, bibkeys_latex, db, table_file='surveyTable.xlsx', shee
 
     #filter `keys` by the selected feature `values`
     keys_per_feature = dict()
-    for f in features:
-        keys_per_feature[f] = []
+    for feature in features:
+        keys_per_feature[feature] = []
         for ckey in common_keys:
             idx = excel_keys.index(ckey)
-            if excel_features[idx] == f:
-                keys_per_feature[f].append(ckey)
+            if excel_features[idx] == feature:
+                keys_per_feature[feature].append(ckey)
                 if verbose: print('found key %s at position %d' %(ckey, idx))
     
     # Plotting time!
@@ -63,11 +63,11 @@ def feature_hist(feature, bibkeys_latex, db, table_file='surveyTable.xlsx', shee
     plt.xlabel('year')
     
     years = []
-    for f in features:
-        if len(keys_per_feature[f]) == 0: continue
-        years.append([int(get_entry(db, key)['year']) for key in keys_per_feature[f]])
+    for feature in features:
+        if len(keys_per_feature[feature]) == 0: continue
+        years.append([int(get_entry(db, key)['year']) for key in keys_per_feature[feature]])
         
-    plt.hist(bins=bins, x=years, rwidth=0.9, label=features, alpha=0.5, histtype='bar')
+    plt.hist(bins=bins, x=years, rwidth=0.9, label=feature, alpha=0.5, histtype='bar')
 
     plt.legend()
     plt.savefig('../images/'+ feature +'.pdf', format='pdf', bbox_inches='tight')

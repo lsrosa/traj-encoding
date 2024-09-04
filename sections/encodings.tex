@@ -1,1 +1,21 @@
 \section{Encodings}\label{sec: encodings}
+
+\subsection{Recurrent Neural Networks}
+
+\rev{just for testing} \cite{xu2022socialvae} The paper uses relatively normal combination of rnn and attention to encode the past, its most important contribution comes in the recursive reasoning of the decoder.
+
+\subsection{Long-Short Term Memory}
+
+\rev{just for testing} \cite{tsai2020generative} focus on learning human-compliant behaviors for robots navigating in human crowded environments, by optimizing trajectories both for comfort (the absence of annoyance and stress for humans) and naturalness (the similarity between robots and humans).
+
+They state ``reinforcement learning approaches tend to optimize on the comfort aspect of the socially compliant navigation, whereas the inverse reinforcement learning approaches are designed to achieve natural behavior.''
+
+A \gls{lstm} encoder-decoder is defined for each of three social-interaction force (intention, social interaction and fluctuation) from \cite{helbing1995social} to improves interpretability, which are used with a adversarial training to reduce the data-bias tendency of \glspl{lstm}.
+
+The trajectories of the robot and other agents (humans) are encoded with \glspl{lstm}, for intention just the robot trajectory is encoded, for social interaction and fluctuation all trajectories are encoded and passed through a \texttt{maxpooling} layer before the \gls{lstm}.
+%
+Both encoding are passed to an adversarial training using demonstrations.
+
+\subsection{Graph Neural Networks}
+
+\rev{just for testing} \cite{da2022path} In this paper, they suggest PAGA, which is an improvement on LaneCGNB \cite{liang2020learning}. Namely, the update the method for calculating the attention weights in the GNN used to encode the map. Instead of simply using an the four different adjacency matrices, the replaces that with a more complex matrix able to include connection via intermediate steps.
